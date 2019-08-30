@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@charset 'utf-8';
+
+@import 'assets/scss/vendor/_vendor-dir';
+
+@import 'assets/scss/abstracts/_abstracts-dir';
+
+@import 'assets/scss/base/_base-dir';
+
+@import 'assets/scss/components/_components-dir';
+
+@import 'assets/scss/layouts/_layouts-dir';
