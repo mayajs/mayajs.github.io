@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './layouts/sidenav/sidenav.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { SectionComponent } from './components/section/section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,
