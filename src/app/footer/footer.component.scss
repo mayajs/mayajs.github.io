@@ -1,0 +1,61 @@
+.footer-bg {
+    // background-image: url("../../../assets/img/maya.svg");
+    background-color: #5f0101c7;
+    background-size: 1rem;
+    background-position: center;
+    background-repeat: space;
+    background-size: inherit;
+
+}
+
+.bg-filter {
+    // background-color: #eee9e9c7;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    padding: 1.3rem;
+}
+
+.footer-head, .footer-foot {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin: 0 0 40px;
+}
+
+li.items, a {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 3px 0;
+    text-align: left;
+    color: #868585;
+    font-weight: 400;
+}
+
+a:hover {
+    color: #f1eeee;
+}
+
+.footer-item {
+    margin: 1em 1em;
+    padding: 5px;
+    align-content: center;
+    display: inline;
+}
+
+.footer-foot {
+    margin-top: 3em;
+    flex-direction: column;
+    text-align: center;
+    color: #f1eeee;
+}
+
+h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 8px 0 12px;
+    color: #f1eeee;
+}
