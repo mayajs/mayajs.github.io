@@ -1,8 +1,10 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
-// MODULES
-import { AppRoutingModule } from "./app-routing.module";
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { GoalsComponent } from './components/contents/goals/goals.component';
+import { FeaturesComponent } from './components/contents/features/features.component';
 
 // COMPONENTS
 import { AppComponent } from "./app.component";
@@ -14,10 +16,8 @@ import { HomeComponent } from "./components/home/home.component";
 @NgModule({
   declarations: [
     AppComponent,
-    SidenavComponent,
-    NotFoundComponent,
-    SectionComponent,
-    HomeComponent
+    GoalsComponent,
+    FeaturesComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
