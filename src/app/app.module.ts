@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { SidenavComponent } from './layouts/sidenav/sidenav.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { SectionComponent } from './components/section/section.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { SectionComponent } from './components/section/section.component';
     SidenavComponent,
     NotFoundComponent,
     SectionComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
