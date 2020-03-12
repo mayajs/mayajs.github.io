@@ -1,0 +1,32 @@
+<div ngbNav class="nav navbar navbar-expand-lg navbar-dark bg-dark" #nav="ngbNav" id="header">
+    <div class="col col-2 row brand">
+        <label class="burger-icon" (click)="toggle()" id="burger-icon">
+            <div class="burger"></div>
+            <div class="burger"></div>
+            <div class="burger"></div> 
+        </label>
+        <a routerLink="" class="navbar-brand">
+            <img src="../../../assets/img/maya.svg" class="maya">
+        </a>
+    </div>
+    <div class="col col-6 d-flex justify-content-start">
+        <li ngbNavItem class="col nav-item p-2" *ngFor="let links of HeaderLink">
+            <a ngbNavLink routerLink="{{links.link}}" class="nav-link">
+                {{links.name}}
+            </a> 
+        </li>
+    </div>
+    <div class="item col col-3 d-flex row">
+        <li class="items">
+            <input class="search form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> 
+        </li>
+        <li class="items">
+            <a href="https://github.com/mayajs/maya" target="_blank">
+                <i><img src="../../../assets/img/GitHub-Mark-Light-32px.png" alt=""></i>
+            </a>
+        </li>
+        <li class="items">
+            <label for="" style="color: white; font-size: 2.5em; font-weight:700; align-self: stretch;">f</label>
+        </li>
+    </div>
+</div>
