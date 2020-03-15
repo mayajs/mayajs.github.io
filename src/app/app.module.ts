@@ -10,10 +10,7 @@ import { SidenavComponent } from "./components/sidenav/sidenav.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
 import { SectionComponent } from "./components/section/section.component";
 import { HomeComponent } from "./components/home/home.component";
-import { BasicConceptsComponent } from './components/contents/sidenav/fundementals/maya-concept/basic-concepts/basic-concepts.component';
-import { MayaConceptSectionComponent } from './components/section/sidenav/fundementals/maya-concept/maya-concept-section/maya-concept-section.component';
-import { ModulesSectionComponent } from './components/section/sidenav/fundementals/maya-concept/modules-section/modules-section.component';
-import { ModulesContentComponent } from './components/contents/sidenav/fundementals/maya-concept/modules-content/modules-content.component';
+import { IntroductionComponent } from './components/sidenav/introduction/introduction.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +21,9 @@ import { ModulesContentComponent } from './components/contents/sidenav/fundement
     MayaConceptSectionComponent,
     ModulesSectionComponent,
     ModulesContentComponent,
+    FeaturesComponent,
+    IntroductionComponent,
+
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

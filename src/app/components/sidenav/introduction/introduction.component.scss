@@ -1,0 +1,21 @@
+.container-1 {
+      display:flex;
+}
+.container-1 div{
+      padding: 10px;
+}
+.box-1{
+ flex: 1;
+ background-color:lightcyan;
+}
+
+.box-2{
+ flex: 5;  
+ margin: 3% 5% 5% 0;
+ 
+}
+
+.box-3{
+ flex: 1;  
+ background-color:lightskyblue;
+ }   
