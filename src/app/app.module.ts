@@ -6,7 +6,6 @@ import { GoalsComponent } from "./components/contents/goals/goals.component";
 import { FeaturesComponent } from "./components/contents/features/features.component";
 
 // COMPONENTS
-import { AppComponent } from "./app.component";
 import { SidenavComponent } from "./components/sidenav/sidenav.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
 import { SectionComponent } from "./components/section/section.component";
