@@ -13,6 +13,7 @@ import { HomeComponent } from "./components/home/home.component";
 import { BasicConceptsComponent } from './components/contents/sidenav/fundementals/maya-concept/basic-concepts/basic-concepts.component';
 import { MayaConceptSectionComponent } from './components/section/sidenav/fundementals/maya-concept/maya-concept-section/maya-concept-section.component';
 import { ModulesSectionComponent } from './components/section/sidenav/fundementals/maya-concept/modules-section/modules-section.component';
+import { ModulesContentComponent } from './components/contents/sidenav/fundementals/maya-concept/modules-content/modules-content.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ModulesSectionComponent } from './components/section/sidenav/fundementa
     BasicConceptsComponent,
     MayaConceptSectionComponent,
     ModulesSectionComponent,
+    ModulesContentComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
