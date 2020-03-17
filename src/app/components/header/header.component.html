@@ -1,26 +1,19 @@
 <div ngbNav class="nav navbar navbar-expand-lg navbar-dark bg-dark" #nav="ngbNav" id="header">
     <div class="col col-2 row brand">
-        <label class="burger-icon" id="burger-icon">
+        <label class="burger-icon" (click)="toggle()" id="burger-icon">
             <div class="burger"></div>
             <div class="burger"></div>
-            <div class="burger"></div>
+            <div class="burger"></div> 
         </label>
         <a routerLink="" class="navbar-brand">
             <img src="../../../assets/img/maya.svg" class="maya">
         </a>
     </div>
     <div class="col col-6 d-flex justify-content-start">
-        <li ngbNavItem class="col nav-item p-2">
-            <a ngbNavLink routerLink="" class="nav-link">FEATURES</a> 
-        </li>
-        <li ngbNavItem class="col nav-item p-2">
-            <a ngbNavLink routerLink="" class="nav-link">DOCS</a> 
-        </li>
-        <li ngbNavItem class="col nav-item p-2">
-            <a ngbNavLink routerLink="" class="nav-link">RESOURCES</a> 
-        </li>
-        <li ngbNavItem class="col nav-item p-2">
-            <a ngbNavLink routerLink="" class="nav-link">EVENTS</a> 
+        <li ngbNavItem class="col nav-item p-2" *ngFor="let links of HeaderLink">
+            <a ngbNavLink routerLink="{{links.link}}" class="nav-link">
+                {{links.name}}
+            </a> 
         </li>
     </div>
     <div class="item col col-3 d-flex row">
