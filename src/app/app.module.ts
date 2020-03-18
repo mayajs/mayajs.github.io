@@ -2,7 +2,6 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { GoalsComponent } from './components/contents/goals/goals.component';
 import { FeaturesComponent } from './components/contents/features/features.component';
 
