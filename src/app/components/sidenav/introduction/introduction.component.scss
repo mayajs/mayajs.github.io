@@ -1,21 +1,76 @@
-.container-1 {
-      display:flex;
-}
-.container-1 div{
-      padding: 10px;
-}
-.box-1{
- flex: 1;
- background-color:lightcyan;
-}
+  
+            * {
+                  box-sizing: border-box;
+            }
 
-.box-2{
- flex: 5;  
- margin: 3% 5% 5% 0;
- 
-}
+            html,
+            body {
+                  background: #fff;
+            }
 
-.box-3{
- flex: 1;  
- background-color:lightskyblue;
- }   
+            body {
+                  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            }
+
+            h1 {
+                  font-weight: 300;
+            }
+
+            main {
+                  display: grid;
+                  grid-template-columns: 1fr;
+                  max-width: 100em;
+                  width: 90%;
+                  margin: 5% auto;
+            }
+
+            section {
+                  padding: 10px 0 1px 1%;
+            }
+         
+            .tipbox {
+                  font-size: 15px;
+                  color: white;
+                  background-color: #4a4a4a;
+                  border-left-color: rgb(41, 41, 41);
+                  border-left-width: 10px;
+                  border-left-style: solid;
+                  margin: 0 0 5px 0;
+                  padding: 5px;
+            }
+
+            .tipbox .tipbox-p {
+                  margin: 5px auto 5px 5px;
+            }
+            .tipbox .p-style {
+                  margin: auto auto 5px 5%;
+            }
+            .tipbox .highlight {
+             color:rgb(107, 253, 85);
+            }
+            .a-right {
+                        text-align: right;
+                  }
+                   
+            .a-right a.section-link{
+                       
+                  text-decoration:none;
+                  color:black;
+            }
+            .container-allcards {
+                  display: flex;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                  margin-left: 0;
+                  padding-left: 0;
+              
+            }
+
+                  .card {
+                        width:350px;
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                        margin: 1%; 
+                  }  
+                  .card-title{
+                        text-align: center;
+                  }
