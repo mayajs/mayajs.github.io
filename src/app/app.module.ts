@@ -11,6 +11,7 @@ import { NotFoundComponent } from "./components/not-found/not-found.component";
 import { SectionComponent } from "./components/section/section.component";
 import { HomeComponent } from "./components/home/home.component";
 import { IntroductionComponent } from './components/sidenav/introduction/introduction.component';
+import { SetupInstallationComponent } from './components/section/setup-installation/setup-installation.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { IntroductionComponent } from './components/sidenav/introduction/introdu
     ModulesContentComponent,
     FeaturesComponent,
     IntroductionComponent,
+    SetupInstallationComponent,
 
   ],
   imports: [BrowserModule, AppRoutingModule],
