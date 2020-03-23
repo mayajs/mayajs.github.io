@@ -1,173 +1,231 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 
-.logo-text {
-  width: 20%;
-  margin-top: 3%;
-}
-
-.home {
-  margin: 0;
-  font-family: 'Rubik', sans-serif;
-}
-
-ul {
+ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 
-.home {
-  text-align: center;
-  padding: 1em 2em;
+a{
+  text-decoration: none;
+  color: black;
+  padding-right: 3rem;
 }
 
-.hide-mobile {
-  display: none;
+.wrapper{
+  padding: .9rem .5rem;
 }
 
-header {
+$colors: (
+  primary: #9C1804,
+  secondary: #000,
+
+);
+
+@function color($color-name){
+  @return map-get($colors, $color-name)
+}
+
+$tablet: 840px;
+$desktop: 1280px;
+
+@mixin tablet {
+  @media(min-width: #{$tablet}){
+      @content;
+  }
+}
+
+@mixin desktop {
+  @media(min-width: #{$desktop}){
+      @content;
+  }
+}
+
+header{
   display: flex;
   justify-content: space-between;
+
+  .navbar{
+
+      display: none;
+
+      @include desktop{
+          display: inline;  
+          margin-top: 1rem;  
+      }
+      
+  }
+
+  li {
+      @include desktop{
+          float: left;
+      }
+  }
+
+  
+
+  .logo-text{
+      margin: 1rem;
+
+      @include tablet{
+          width: 13%;
+      }
+
+      @include desktop{
+          width: 8%;
+      }
+  }
+
+  .hamburger-icon{
+      margin-top: .5rem;
+
+      cursor: pointer;
+
+      @include desktop{
+          display: none
+      }
+  }
 }
 
-.menu {
-  width: 25px;
-  margin-top: 45%;
-}
 
-.logo-maya-svg {
-  width: 35%;
-  margin-top: 10%;
-}
-
-.hero-text {
-  font-size: 1.7em;
-  font-weight: 150;
-}
-
-.text-red {
-  color: #9C1804;
-}
-
-.subheading {
-  font-size: 1em;
-  font-style: light;
-}
-
-.button {
-  border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1em;
-  border-radius: 30px;
-  cursor: pointer;
-
-}
-
-.get-started {
-  background: #9C1804;
-  padding: 1em 10em;
-  color: #fff;
-}
-
-.github {
-  background: transparent;
-  padding: 1em 11em;
-  color: black;
-  border: 1px solid;
-  margin-top: 2%;
-}
-
-@media only screen and (min-width: 650px) {
-
-  .menu {
-    margin-top: 15%;
+.hero-section{
+  @include tablet{
+      display: flex;
+      justify-content: space-between;
   }
 
-  .logo-maya-svg {
-    width: 40%;
-    display: flex;
+  .hero-section-left{
+
+
+
+      .logo-maya-svg{
+          width: 56%;
+          margin-top: 1rem;
+          @include tablet{
+              width: 130%;
+              margin: 1rem;
+          }
+
+          @include desktop{
+              width: 180%;
+              
+          }
+
+      }
+
+      .branches{
+          display: none;
+          @include tablet{
+              display: block;
+              width: 350px;
+              position: absolute;
+              top: 23;
+              left: 0;
+          }
+
+          @include desktop{
+              top: 24rem;
+              width: 480px;
+          }
+
+      }
+
+
   }
+  
+  .hero-section-right{
+      text-align: center;
+      
 
-  .hero {
-    display: flex;
-    justify-content: space-between;
+      @include tablet{
+         text-align: right;
+         margin: 1.5rem; 
+      }
+
+      @include desktop{
+          margin-right: 3rem;
+      }
+
+      .text-red{
+          color: color(primary);
+      }
+
+      .hero-text{
+          font-size: 1.3rem;
+          font-weight: 400;
+
+          @include tablet{
+              font-size: 1.6rem;
+              margin-top: 5rem;
+          }
+
+          @include desktop{
+              font-size: 2.3rem;
+              margin-top: 4rem;
+          }
+             
+      }
+
+      .subheading{
+          font-size: .7rem;
+
+          @include desktop{
+              font-size: 1rem;
+          }
+          
+      }
+
+      button{
+          border: none;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 1em;
+          border-radius: 30px;
+          cursor: pointer;
+          margin-bottom: 2%;
+          width: 80%;
+          
+
+          @include tablet{
+              margin-top: 3%;
+              width: 40%;
+              
+          }
+
+          @include desktop{
+              width: 30%;
+
+          }
+      }
+
+
+      .get-started{
+          background: color(primary);
+          padding: 1.3em;
+          color: #fff;
+
+          @include tablet{
+              padding: 1em;
+          }
+          
+      }
+
+      .github{
+          background: transparent;
+          padding: 1.3em;
+          color: color(secondary);
+          border: 1px solid;  
+
+          @include tablet{
+              padding: 1rem;
+          }
+      }        
+
+      .github-logo{
+          margin-right: .5rem;     
+      }
   }
-
-  .hero-text {
-    margin-top: 18%;
-    font-size: 2em;
-    text-align: right;
-  }
-
-  .subheading {
-    font-size: .6em;
-  }
-
-  .get-started {
-    padding: 1.4em 8em;
-  }
-
-  .github {
-    padding: 1.4em 8em;
-  }
-
-}
-
-@media only screen and (min-width: 1024px) {
-
-  .hero-text {
-    margin-top: 10%;
-  }
-
-  .logo-text {
-    width: 10%;
-    margin-left: 3%;
-    margin-top: 1%;
-  }
-
-
-  .logo-maya-svg {
-    width: 25%;
-    margin-top: 3%;
-  }
-
-  .branches {
-    height: 38%;
-    width: 35%;
-    position: absolute;
-    top: 23em;
-    left: 0;
-  }
-
-  .show-desktop {
-    display: block;
-  }
-
-  .hide-desktop {
-    display: none;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-
-  nav ul li {
-    float: left;
-    padding: 1em 1em;
-  }
-
-  .get-started {
-    padding: 1em 8em;
-  }
-
-  .github {
-    padding: 1em 8em;
-    margin-top: 2%;
-  }
-
 }
