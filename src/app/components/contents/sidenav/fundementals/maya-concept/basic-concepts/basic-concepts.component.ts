@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-basic-concepts',
-  templateUrl: './basic-concepts.component.html',
-  styleUrls: ['./basic-concepts.component.scss']
+  selector: "app-basic-concepts",
+  templateUrl: "./basic-concepts.component.html",
+  styleUrls: ["./basic-concepts.component.scss"],
 })
 export class BasicConceptsComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
