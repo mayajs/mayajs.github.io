@@ -20,6 +20,7 @@ import { FaqComponent } from "./components/faq/faq.component";
 import { GuidesComponent } from "./components/guides/guides.component";
 import { LearnMoreComponent } from "./components/learn-more/learn-more.component";
 import { MissionComponent } from "./components/home/mission/mission.component";
+import { VisionComponent } from "./components/home/vision/vision.component";
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { MissionComponent } from "./components/home/mission/mission.component";
     GuidesComponent,
     LearnMoreComponent,
     MissionComponent,
+    VisionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
