@@ -19,6 +19,7 @@ import { ModulesContentComponent } from "./components/contents/sidenav/fundement
 import { FaqComponent } from "./components/faq/faq.component";
 import { GuidesComponent } from "./components/guides/guides.component";
 import { LearnMoreComponent } from "./components/learn-more/learn-more.component";
+import { MissionComponent } from "./components/home/mission/mission.component";
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { LearnMoreComponent } from "./components/learn-more/learn-more.component
     FaqComponent,
     GuidesComponent,
     LearnMoreComponent,
+    MissionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
