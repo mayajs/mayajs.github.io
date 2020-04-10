@@ -1,5 +1,5 @@
 .home {
   height: auto;
   display: grid;
-  grid-template-rows: 60px 900px repeat(5, minmax(800px, max-content));
+  grid-template-rows: 60px 900px repeat(4, minmax(800px, max-content));
 }
