@@ -1,1 +1,11 @@
-<p>navbar works!</p>
+<header>
+  <img src="{{ svg.maya }}" alt="mayajs" class="logo-text" />
+  <a [routerLink]="['/']"><img src="{{ svg.hamburger }}" alt="hamburger" class="hamburger-icon" /></a>
+  <nav class="navbar">
+    <ul>
+      <li *ngFor="let tab of tabs">
+        <a [routerLink]="[tab.path]">{{ tab.name }}</a>
+      </li>
+    </ul>
+  </nav>
+</header>
