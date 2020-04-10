@@ -17,6 +17,7 @@ import { BasicConceptsComponent } from "./components/contents/sidenav/fundementa
 import { ModulesSectionComponent } from "./components/section/sidenav/fundementals/maya-concept/modules-section/modules-section.component";
 import { ModulesContentComponent } from "./components/contents/sidenav/fundementals/maya-concept/modules-content/modules-content.component";
 import { FaqComponent } from "./components/faq/faq.component";
+import { GuidesComponent } from "./components/guides/guides.component";
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { FaqComponent } from "./components/faq/faq.component";
     IntroductionComponent,
     SetupInstallationComponent,
     FaqComponent,
+    GuidesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
