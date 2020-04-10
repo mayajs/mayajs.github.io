@@ -21,6 +21,7 @@ import { GuidesComponent } from "./components/guides/guides.component";
 import { LearnMoreComponent } from "./components/learn-more/learn-more.component";
 import { MissionComponent } from "./components/home/mission/mission.component";
 import { VisionComponent } from "./components/home/vision/vision.component";
+import { KeyFeaturesComponent } from "./components/home/key-features/key-features.component";
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { VisionComponent } from "./components/home/vision/vision.component";
     LearnMoreComponent,
     MissionComponent,
     VisionComponent,
+    KeyFeaturesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
