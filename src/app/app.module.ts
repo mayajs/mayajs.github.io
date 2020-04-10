@@ -23,6 +23,7 @@ import { MissionComponent } from "./components/home/mission/mission.component";
 import { VisionComponent } from "./components/home/vision/vision.component";
 import { KeyFeaturesComponent } from "./components/home/key-features/key-features.component";
 import { SubscribedComponent } from "./components/home/subscribed/subscribed.component";
+import { DescriptionComponent } from "./components/home/description/description.component";
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { SubscribedComponent } from "./components/home/subscribed/subscribed.com
     VisionComponent,
     KeyFeaturesComponent,
     SubscribedComponent,
+    DescriptionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
