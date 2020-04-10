@@ -26,6 +26,7 @@ import { ControllersComponent } from "./components/learn-more/controllers/contro
 import { ModelsComponent } from "./components/learn-more/models/models.component";
 import { ServicesComponent } from "./components/learn-more/services/services.component";
 import { FooterComponent } from "./components/utility/footer/footer.component";
+import { NavbarComponent } from "./components/navbar/navbar.component";
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { FooterComponent } from "./components/utility/footer/footer.component";
     ModelsComponent,
     ServicesComponent,
     FooterComponent,
+    NavbarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
