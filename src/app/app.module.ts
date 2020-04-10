@@ -6,7 +6,7 @@ import { FeaturesComponent } from "./components/features/features.component";
 
 // COMPONENTS
 import { AppComponent } from "./app.component";
-import { SidenavComponent } from "./components/sidenav/sidenav.component";
+import { SidenavComponent } from "./components/utility/sidenav/sidenav.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
 import { HomeComponent } from "./components/home/home.component";
 import { IntroductionComponent } from "./components/home/introduction/introduction.component";
