@@ -11,7 +11,7 @@ import { SidenavComponent } from "./components/sidenav/sidenav.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
 import { SectionComponent } from "./components/section/section.component";
 import { HomeComponent } from "./components/home/home.component";
-import { IntroductionComponent } from "./components/sidenav/introduction/introduction.component";
+import { IntroductionComponent } from "./components/home/introduction/introduction.component";
 import { SetupInstallationComponent } from "./components/section/setup-installation/setup-installation.component";
 import { BasicConceptsComponent } from "./components/contents/sidenav/fundementals/maya-concept/basic-concepts/basic-concepts.component";
 import { ModulesSectionComponent } from "./components/section/sidenav/fundementals/maya-concept/modules-section/modules-section.component";
