@@ -3,7 +3,7 @@ import { NgModule } from "@angular/core";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { GoalsComponent } from "./components/contents/goals/goals.component";
-import { FeaturesComponent } from "./components/contents/features/features.component";
+import { FeaturesComponent } from "./components/features/features.component";
 
 // COMPONENTS
 import { AppComponent } from "./app.component";
