@@ -19,6 +19,7 @@ import { KeyFeaturesComponent } from "./components/home/key-features/key-feature
 import { SubscribedComponent } from "./components/home/subscribed/subscribed.component";
 import { DescriptionComponent } from "./components/home/description/description.component";
 import { GettingStartedComponent } from "./components/learn-more/getting-started/getting-started.component";
+import { RequirementsComponent } from "./components/learn-more/requirements/requirements.component";
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { GettingStartedComponent } from "./components/learn-more/getting-started
     SubscribedComponent,
     DescriptionComponent,
     GettingStartedComponent,
+    RequirementsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
