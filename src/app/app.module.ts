@@ -20,6 +20,7 @@ import { SubscribedComponent } from "./components/home/subscribed/subscribed.com
 import { DescriptionComponent } from "./components/home/description/description.component";
 import { GettingStartedComponent } from "./components/learn-more/getting-started/getting-started.component";
 import { RequirementsComponent } from "./components/learn-more/requirements/requirements.component";
+import { InstallationComponent } from "./components/learn-more/installation/installation.component";
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { RequirementsComponent } from "./components/learn-more/requirements/requ
     DescriptionComponent,
     GettingStartedComponent,
     RequirementsComponent,
+    InstallationComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
