@@ -22,6 +22,7 @@ import { GettingStartedComponent } from "./components/learn-more/getting-started
 import { RequirementsComponent } from "./components/learn-more/requirements/requirements.component";
 import { InstallationComponent } from "./components/learn-more/installation/installation.component";
 import { RoutesComponent } from "./components/learn-more/routes/routes.component";
+import { ControllersComponent } from "./components/learn-more/controllers/controllers.component";
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { RoutesComponent } from "./components/learn-more/routes/routes.component
     RequirementsComponent,
     InstallationComponent,
     RoutesComponent,
+    ControllersComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
