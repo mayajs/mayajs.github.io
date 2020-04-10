@@ -6,6 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./mission.component.scss"],
 })
 export class MissionComponent implements OnInit {
+  svg = "../../../../assets/svg/mission.svg";
   constructor() {}
 
   ngOnInit(): void {}
