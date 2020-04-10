@@ -41,6 +41,8 @@ $desktop: 1280px;
 }
 
 .description {
+  height: 100%;
+
   @include tablet {
     display: flex;
     justify-content: space-between;
