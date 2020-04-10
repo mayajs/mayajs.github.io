@@ -23,6 +23,7 @@ import { RequirementsComponent } from "./components/learn-more/requirements/requ
 import { InstallationComponent } from "./components/learn-more/installation/installation.component";
 import { RoutesComponent } from "./components/learn-more/routes/routes.component";
 import { ControllersComponent } from "./components/learn-more/controllers/controllers.component";
+import { ModelsComponent } from "./components/learn-more/models/models.component";
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { ControllersComponent } from "./components/learn-more/controllers/contro
     InstallationComponent,
     RoutesComponent,
     ControllersComponent,
+    ModelsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
