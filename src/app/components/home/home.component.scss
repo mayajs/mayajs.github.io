@@ -1,6 +1,5 @@
 .home {
-  height: 100vh;
-  padding: .9rem .5rem;
+  height: auto;
   display: grid;
   grid-template-rows: 50px repeat(5, minmax(700px, max-content));
 }
