@@ -6,6 +6,8 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./subscribed.component.scss"],
 })
 export class SubscribedComponent implements OnInit {
+  svg = "../../../../assets/svg/mail.svg";
+
   constructor() {}
 
   ngOnInit(): void {}
