@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding-right: 3rem;
+}
+
+
+
+$colors: (primary: #9C1804,
+  secondary: #000,
+
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name)
+}
+
+$tablet: 840px;
+$desktop: 1280px;
+
+
+@mixin tablet {
+  @media(min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media(min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+.description {
+  height: 100%;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .description-left {
+
+    .logo-maya-svg {
+      width: 56%;
+      margin-top: 1rem;
+
+      @include tablet {
+        width: 130%;
+        margin: 1rem;
+      }
+
+      @include desktop {
+        width: 300%;
+      }
+
+    }
+
+    .branches {
+      display: none;
+
+      @include tablet {
+        display: block;
+        width: 350px;
+        position: absolute;
+        top: 23;
+        left: 0;
+      }
+
+      @include desktop {
+        top: 30rem;
+        width: 40%;
+      }
+
+    }
+
+  }
+
+  .description-right {
+    text-align: center;
+
+    @include tablet {
+      text-align: right;
+      margin: 1.5rem;
+    }
+
+    @include desktop {
+      margin-right: 3rem;
+    }
+
+    .text-red {
+      color: color(primary);
+    }
+
+    .description-text {
+      font-size: 1.5rem;
+      font-weight: 400;
+
+      @include tablet {
+        font-size: 1.6rem;
+        margin-top: 5rem;
+      }
+
+      @include desktop {
+        font-size: 3.5rem;
+        margin-top: 4rem;
+      }
+
+    }
+
+    .subheading {
+      font-size: .7rem;
+
+      @include desktop {
+        font-size: 1rem;
+      }
+
+    }
+
+    button {
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1em;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-bottom: 2%;
+      width: 80%;
+
+
+      @include tablet {
+        margin-top: 3%;
+        width: 40%;
+
+      }
+
+      @include desktop {
+        width: 30%;
+
+      }
+    }
+
+
+    .get-started {
+      background: color(primary);
+      padding: 1.3em;
+      color: #fff;
+
+      @include tablet {
+        padding: 1em;
+      }
+
+    }
+
+    .github {
+      background: transparent;
+      padding: 1.3em;
+      color: color(secondary);
+      border: 1px solid;
+
+      @include tablet {
+        padding: 1rem;
+      }
+    }
+
+    .github-logo {
+      margin-right: .5rem;
+    }
+  }
+}

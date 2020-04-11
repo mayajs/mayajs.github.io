@@ -1,0 +1,70 @@
+.content {
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content 8fr;
+
+  .title {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+  }
+
+  .features {
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, minmax(200px, 1fr));
+
+    .feature {
+      text-align: center;
+      padding: 1rem;
+      grid-gap: .5rem;
+      height: 100%;
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+
+      img {
+        justify-self: center;
+      }
+
+      span {
+        b {
+          color: red;
+        }
+
+        font-size: 1.5rem;
+      }
+    }
+
+    .first-group {
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(100px, 1fr));
+
+      #typescript {
+        color: #000000;
+      }
+
+      #express {
+        color: #000000;
+      }
+
+      #code {
+        color: #000000;
+      }
+    }
+
+    .second-group {
+      height: 100%;
+      display: grid;
+      grid-template-columns: .5fr repeat(2, minmax(100px, 1fr)) .5fr;
+
+      #controllers {
+        grid-column: 2/3;
+      }
+
+      #validations {
+        grid-column: 3/4;
+      }
+    }
+  }
+}
