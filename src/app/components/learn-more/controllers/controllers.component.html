@@ -1,1 +1,111 @@
-<p>controllers works!</p>
+<div class="header-control">
+  <h3>Controllers</h3>
+</div>
+<div ></div>
+<div class="control-code">
+  <code>
+    maya g cotnroller [name-of-controller]
+  </code>
+
+  <code>
+  <br>
+    or
+  <br>
+    maya g c [name-of-controller] via Mayajs CLI
+  </code>
+</div>
+
+<div class ="strip-note-control">
+  <p>
+    To create a container all you need to do is to run <code> maya g controller [name-of-controller] </code> or <code> maya g c [name-of-controller]</code> via Maya CLI.
+    <br>
+    A sample code below shows what you can do inside the controller.
+    <br>
+    You can add <code> Get, Patch, Post, Delete</code> and<code> Put</code> request using decorators with the same name.
+  </p>
+</div>
+
+<div class="controller-iecode">
+  <code class ="control-tuts-2">import &#00;</code>
+  <code class="control-tuts-1">&#123; Get, Patch, Post, Delete, Put &#125;</code>
+  <code class ="control-tuts-2"> from </code>
+  <code class="control-tuts-1">"@mayajs/common";</code>
+  <br>
+  <code class ="control-tuts-2">import &#00;</code>
+  <code class="control-tuts-1">&#123; Request, Response, NextFunction &#125;</code>
+  <code class ="control-tuts-2"> from </code>
+  <code class="control-tuts-1">"@mayajs/core";</code>
+  <br>
+  <code class ="control-tuts-2">import &#00;</code>
+  <code class="control-tuts-1">&#123; SampleServices &#125;</code>
+  <code class ="control-tuts-2"> from </code>
+  <code class="control-tuts-1">"./sample.service";</code>
+  <br>
+  <code class ="control-tuts-2">import &#00;</code>
+  <code class="control-tuts-1">&#123; Controller &#125;</code>
+  <code class ="control-tuts-2"> from </code>
+  <code class="control-tuts-1">"@mayajs/core";</code>
+  <br><br>
+
+  <code class="control-tuts-3">@Controller</code><code class="control-tuts-1"> &#40;&#123;</code><br>
+  <code class="control-tuts-1">	&#00;&#00;&#00;model: "./sample.model", </code><br>
+  <code class="control-tuts-1">	&#00;&#00;&#00;route: "./sample", </code><br>
+  <code class="control-tuts-1">&#41;&#125;</code><br>
+
+  <code class ="control-tuts-2">export class </code><code class="control-tuts-3">SampleController </code><code class="control-tuts-1">&#123;</code><br>
+  <code class="control-tuts-1">&#00;&#00;//Inject SampleServices</code><br>
+  <code class="control-tuts-3">&#00;&#00; constructor&#40;</code><code class ="control-tuts-2">private&#00;</code>
+  <code class="control-tuts-1">services: SampleServices&#41; &#123;&#125;</code><br><br>
+
+  <code class="control-tuts-1">&#00;&#00;//This is the GET request equal to "/sample"</code><br>
+  <code class="control-tuts-3">&#00;&#00;@Get</code><code class="control-tuts-1">&#40;&#123; path "/", middlewares:[] &#125;&#41;</code><br>
+  <code class="control-tuts-3">&#00;&#00;get</code><code class="control-tuts-1">(req: Request, res: Response, next: NextFunction):</code>
+  <code class="control-tuts-2"> void </code><code class="control-tuts-1">&#123;</code><br>
+  <code class="control-tuts-1">&#00;&#00;// Use a function on SampleServices</code><br>
+  <code class="control-tuts-3">&#00;&#00;this</code><code class="control-tuts-1">.services.</code><code class="control-tuts-3">getSamplevs()</code><br><br>
+  <code class="control-tuts-1">&#00;&#00;//Do some GET stuff here</code><br>
+  <code class="control-tuts-1">&#00;&#00;res.</code><code class="control-tuts-3">send</code><code class="control-tuts-1">("This is a GET with id request");<br>&#00;&#00;&#125;</code><br><br>
+
+  <code class="control-tuts-1">&#00;&#00;//This is the GET request equal to "/sample/:id"</code><br>
+  <code class="control-tuts-3">&#00;&#00;@Get</code><code class="control-tuts-1">&#40;&#123; path "/:id", middlewares:[] &#125;&#41;</code><br>
+  <code class="control-tuts-3">&#00;&#00;getid</code><code class="control-tuts-1">(req: Request, res: Response, next: NextFunction):</code>
+  <code class="control-tuts-2"> void </code><code class="control-tuts-1">&#123;</code><br>
+  <code class="control-tuts-1">&#00;&#00;//Do some GET stuff here</code><br>
+  <code class="control-tuts-1">&#00;&#00;res.</code><code class="control-tuts-3">send</code><code class="control-tuts-1">("This is a GET with id request");<br>&#00;&#00;&#125;</code><br><br>
+
+  <code class="control-tuts-1">&#00;&#00;//This is the POST request equal to "/sample/:id/:name"</code><br>
+  <code class="control-tuts-3">&#00;&#00;@Post</code><code class="control-tuts-1">&#40;&#123; path "/:id/:name", middlewares:[] &#125;&#41;</code><br>
+  <code class="control-tuts-3">&#00;&#00;post</code><code class="control-tuts-1">(req: Request, res: Response, next: NextFunction):</code>
+  <code class="control-tuts-2"> void </code><code class="control-tuts-1">&#123;</code><br>
+  <code class="control-tuts-1">&#00;&#00;//Do some Post stuff here</code><br>
+  <code class="control-tuts-1">&#00;&#00;res.</code><code class="control-tuts-3">send</code><code class="control-tuts-1">("This is a POST with id request");<br>&#00;&#00;&#125;</code><br><br>
+
+  <code class="control-tuts-1">&#00;&#00;//This is the PATCH request equal to "/sample/:id/custom-path"</code><br>
+  <code class="control-tuts-3">&#00;&#00;@Patch</code><code class="control-tuts-1">&#40;&#123; path "/:id/custom-path", middlewares:[] &#125;&#41;</code><br>
+  <code class="control-tuts-3">&#00;&#00;patch</code><code class="control-tuts-1">(req: Request, res: Response, next: NextFunction):</code>
+  <code class="control-tuts-2"> void </code><code class="control-tuts-1">&#123;</code><br>
+  <code class="control-tuts-1">&#00;&#00;//Do some PATCH stuff here</code><br>
+  <code class="control-tuts-1">&#00;&#00;res.</code><code class="control-tuts-3">send</code><code class="control-tuts-1">("This is a PATCH with id request");<br>&#00;&#00;&#125;</code><br><br>
+
+  <code class="control-tuts-1">&#00;&#00;//This is the PUT request equal to "/sample/:id"</code><br>
+  <code class="control-tuts-3">&#00;&#00;@Put</code><code class="control-tuts-1">&#40;&#123; path "/:id", middlewares:[] &#125;&#41;</code><br>
+  <code class="control-tuts-3">&#00;&#00;put</code><code class="control-tuts-1">(req: Request, res: Response, next: NextFunction):</code>
+  <code class="control-tuts-2"> void </code><code class="control-tuts-1">&#123;</code><br>
+  <code class="control-tuts-1">&#00;&#00;//Do some PUT stuff here</code><br>
+  <code class="control-tuts-1">&#00;&#00;res.</code><code class="control-tuts-3">send</code><code class="control-tuts-1">("This is a PUT with id request");<br>&#00;&#00;&#125;</code><br><br>
+
+  <code class="control-tuts-1">&#00;&#00;//This is the DELETE request equal to "/sample/:id"</code><br>
+  <code class="control-tuts-3">&#00;&#00;@Delete</code><code class="control-tuts-1">&#40;&#123; path "/:id", middlewares:[] &#125;&#41;</code><br>
+  <code class="control-tuts-3">&#00;&#00;delete</code><code class="control-tuts-1">(req: Request, res: Response, next: NextFunction):</code>
+  <code class="control-tuts-2"> void </code><code class="control-tuts-1">&#123;</code><br>
+  <code class="control-tuts-1">&#00;&#00;//Do some delete stuff here</code><br>
+  <code class="control-tuts-1">&#00;&#00;res.</code><code class="control-tuts-3">send</code><code class="control-tuts-1">("This is a delete with id request");<br>&#00;&#00;&#125;</code><br>
+  <code class="control-tuts-1">&#125;</code>
+</div>
+
+<div class ="strip-note-control-2">
+  <p>
+    Handles all the request. You can define the specific middleware or validation here using the <code>METHOD DECORATOR</code> function.
+    Method decorators are special functions that inject information to declaritively specify what type of route is being decorated.
+  </p>
+</div>
