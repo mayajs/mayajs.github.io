@@ -1,1 +1,66 @@
-<p>models works!</p>
+<div class="header-models">
+  <h3>Models</h3>
+</div>
+<div ></div>
+<div class="models-code">
+  <code id="copy-code-1" #codeVar1>
+    maya g model [name-of-model]
+  </code>
+  <button style="float: right;" (click)="copyCode(1)"><img src="{{ GSsvg.copyIcon }}" alt="mayajs" class="copy-code"/></button>
+
+  <br>
+    or
+  <br>
+
+  <code id = "copy-code-2" #codeVar2>
+    maya g m [name-of-model]
+  </code>
+  <code> via Mayajs CLI</code>
+  <button style="float: right;" (click)="copyCode(2)"><img src="{{ GSsvg.copyIcon }}" alt="mayajs" class="copy-code"/></button>
+</div>
+
+<div class ="strip-note-models">
+  <p>
+    To create a container all you need to do is to run <code> maya g model [name-of-model] </code> or <code> maya g m [name-of-model]</code> via Maya CLI.
+    <br>
+    You can create a Schema using MongoSchema and a Model using MongoModel from @maya/mongo.
+    <br>
+    Below shows a basic code example inside a model field.
+  </p>
+</div>
+
+<div class="models-iecode">
+  <code class ="models-tuts-2">import &#00;</code>
+  <code class="models-tuts-1">&#123; MongoSchema, MongoModel &#125;</code>
+  <code class ="models-tuts-2"> from </code>
+  <code class="models-tuts-1">"@mayajs/mongo";</code>
+  <br><br>
+  <code class="models-tuts-2">const</code>
+  <code class="models-tuts-3"> schema </code><code class="models-tuts-1">=</code>
+  <code class="models-tuts-3"> MongoSchema</code><code class="models-tuts-1">&#40;&#123;</code><br>
+  <code class="models-tuts-1">&#00;name: &#123;</code><br>
+  <code class="models-tuts-1">&#00;&#00;required: [</code><code class="models-tuts-3">true</code><code class="models-tuts-1">,"Name is required."]</code><br>
+  <code class="models-tuts-1">&#00;&#00;type: </code><code class="models-tuts-3">String</code><br>
+  <code class="models-tuts-1">&#00;&#00;unique: </code><code class="models-tuts-3">true</code><code class="models-tuts-1">,</code><br>
+  <code class="models-tuts-1">&#00;},</code><br>
+  <code class="models-tuts-1">&#41;&#125;;</code><br><br>
+
+  <code class="models-tuts-2">export</code>
+  <code class="models-tuts-3"> default </code><code class="models-tuts-1">MongoModel("Sample",schema)</code>
+
+
+</div>
+
+
+<div class ="strip-note-models-2">
+  <p>
+    This is a moongoose model that the controller will use to mapped the data to be save or modified from a database.
+  </p>
+</div>
+
+
+<div class ="solid-strip-code-1">
+  <p>
+    NOTE: sample.model.ts must be on the same folder of the controller.ts that is referencing it. sample.module.ts must be exported as default too.
+  </p>
+</div>
