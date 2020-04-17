@@ -3,16 +3,19 @@
 </div>
 <div ></div>
 <div class="control-code">
-  <code>
+  <code id="copy-code-1" #codeVar1>
     maya g cotnroller [name-of-controller]
   </code>
+  <button style="float: right;" (click)="copyCode(1)"><img src="{{ GSsvg.copyIcon }}" alt="mayajs" class="copy-code"/></button>
 
-  <code>
   <br>
     or
   <br>
+
+  <code id = "copy-code-2" value = "maya g c [name-of-controller]" #codeVar2>
     maya g c [name-of-controller] via Mayajs CLI
   </code>
+  <button style="float: right;" (click)="copyCode(2)"><img src="{{ GSsvg.copyIcon }}" alt="mayajs" class="copy-code"/></button>
 </div>
 
 <div class ="strip-note-control">
