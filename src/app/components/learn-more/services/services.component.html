@@ -1,1 +1,45 @@
-<p>services works!</p>
+<div class="header-services">
+  <h3>Services</h3>
+</div>
+<div ></div>
+<div class="services-code">
+  <code id="copy-code-1" #codeVar1>
+    maya g service [name-of-service]
+  </code>
+  <button style="float: right;" (click)="copyCode(1)"><img src="{{ GSsvg.copyIcon }}" alt="mayajs" class="copy-code"/></button>
+
+  <br>
+    or
+  <br>
+
+  <code id = "copy-code-2" #codeVar2>
+    maya g s [name-of-service]
+  </code>
+  <code> via Mayajs CLI</code>
+  <button style="float: right;" (click)="copyCode(2)"><img src="{{ GSsvg.copyIcon }}" alt="mayajs" class="copy-code"/></button>
+</div>
+
+<div class ="strip-note-services">
+  <p>
+    To create a controller all you need to do is to run <code> maya g service [name-of-service] </code> or <code> maya g s [name-of-service]</code> via Maya CLI.
+    <br>
+    A sample code shows below shows what can do inside the Services.
+    <br>
+    Below shows a basic code example inside a service field.
+  </p>
+</div>
+
+<div class="services-iecode">
+  <code class ="services-tuts-2">import &#00;</code>
+  <code class="services-tuts-1">&#123; Injectable &#125;</code>
+  <code class ="services-tuts-2"> from </code>
+  <code class="services-tuts-1">"@mayajs/mongo";</code>
+  <br><br>
+  <code class="services-tuts-3"> @Injectable() </code><code class="services-tuts-1">//This decorator allows this class to be injected on other modules</code><br>
+  <code class="services-tuts-2">export class</code><code class="services-tuts-3"> SampleServices</code><code class="services-tuts-1"> &#123;</code><br>
+  <code class="services-tuts-3">&#00;getSamples</code><code class="services-tuts-1">() &#123;</code><br>
+  <code class="services-tuts-1">&#00;&#00;// Your business logic here</code><br>
+
+  <code class="services-tuts-1">&#00;&#00;} </code><br>
+  <code class="services-tuts-1">}</code><br>
+</div>
