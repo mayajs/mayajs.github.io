@@ -10,7 +10,6 @@ import { SidenavComponent } from "./components/utility/sidenav/sidenav.component
 import { NotFoundComponent } from "./components/utility/not-found/not-found.component";
 import { HomeComponent } from "./components/home/home.component";
 import { IntroductionComponent } from "./components/introduction/introduction.component";
-import { FaqComponent } from "./components/faq/faq.component";
 import { LearnMoreComponent } from "./components/learn-more/learn-more.component";
 import { MissionComponent } from "./components/home/mission/mission.component";
 import { VisionComponent } from "./components/home/vision/vision.component";
@@ -34,7 +33,6 @@ import { GistComponent } from "./components/gist/gist.component";
     FeaturesComponent,
     FeaturesComponent,
     IntroductionComponent,
-    FaqComponent,
     LearnMoreComponent,
     MissionComponent,
     VisionComponent,
