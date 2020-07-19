@@ -1,14 +1,19 @@
 <div class="page">
   <div class="sidenav">
-    <a href="#">Introduction</a>
-    <a href="#routes">Routes</a>
-    <a href="#controllers">Controllers</a>
-    <a href="#models">Models</a>
-    <a href="#services">Services</a>
+    <a class="nav-link" *ngFor="let navItem of navItems" (click)="navigateUrl(navItem.url)">{{ navItem.title }}</a>
   </div>
   <div class="main">
-    <app-introduction></app-introduction>
-    <app-routes></app-routes>
-    <app-controllers></app-controllers>
+    <div id="introduction">
+      <app-introduction></app-introduction>
+    </div>
+    <div id="routes">
+      <app-routes></app-routes>
+    </div>
+    <div id="controllers">
+      <app-controllers></app-controllers>
+    </div>
+    <div id="models">
+      <app-models></app-models>
+    </div>
   </div>
 </div>

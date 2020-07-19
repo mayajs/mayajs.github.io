@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-getting-started",
@@ -6,7 +7,34 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./getting-started.component.scss"],
 })
 export class GettingStartedComponent implements OnInit {
-  constructor() {}
+  navItems = [
+    {
+      title: "Introduction",
+      url: "introduction",
+    },
+    {
+      title: "Routes",
+      url: "routes",
+    },
+    {
+      title: "Controllers",
+      url: "controllers",
+    },
+    {
+      title: "Models",
+      url: "models",
+    },
+    {
+      title: "Service",
+      url: "services",
+    },
+  ];
+
+  constructor(public router: Router) {}
 
   ngOnInit(): void {}
+
+  navigateUrl(value: string) {
+    this.router.navigate([], { fragment: value });
+  }
 }

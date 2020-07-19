@@ -3,11 +3,6 @@
   grid-template-columns: 1fr 4fr;
 }
 
-
-.container {
-  padding: .9rem 1rem;
-}
-
 $colors: (primary: #9C1804,
   secondary: #000,
   paragraphs: #5e5e5e,
@@ -31,6 +26,20 @@ $desktop: 1280px;
   @media(min-width: #{$desktop}) {
     @content;
   }
+}
+
+.nav-link {
+  color: color(light);
+  font-size: 1.3rem;
+  cursor: pointer;
+
+  &:hover {
+    color: color(light);
+  }
+}
+
+.nav-link .container {
+  padding: .9rem 1rem;
 }
 
 .bg-primary {
