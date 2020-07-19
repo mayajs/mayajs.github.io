@@ -1,8 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
 import { AppRoutingModule } from "./app-routing.module";
-import { FeaturesComponent } from "./components/features/features.component";
 
 // COMPONENTS
 import { AppComponent } from "./app.component";
@@ -29,8 +27,6 @@ import { GistComponent } from "./components/gist/gist.component";
     SidenavComponent,
     NotFoundComponent,
     HomeComponent,
-    FeaturesComponent,
-    FeaturesComponent,
     IntroductionComponent,
     MissionComponent,
     VisionComponent,
