@@ -5,7 +5,7 @@
 $colors: (primary: #9C1804,
   secondary: #000,
   paragraphs: #5e5e5e,
-
+  light: #eeeeee,
 );
 
 @function color($color-name) {
@@ -127,7 +127,13 @@ button {
 .btn-get-started {
   background: color(primary);
   padding: 1.3em;
-  color: #fff;
+  color: color(light);
+  font-weight: bold;
+
+  &:hover {
+    background: color(light);
+    color: color(primary);
+  }
 }
 
 .btn-github {
@@ -135,6 +141,12 @@ button {
   padding: 1.3em;
   color: color(secondary);
   border: 1px solid;
+  font-weight: bold;
+
+  &:hover {
+    background: color(secondary);
+    color: color(light);
+  }
 }
 
 // Side Navigation and Main
