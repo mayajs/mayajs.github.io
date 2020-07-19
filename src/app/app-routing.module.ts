@@ -3,11 +3,9 @@ import { Routes, RouterModule, ExtraOptions } from "@angular/router";
 
 // COMPONENTS
 import { HomeComponent } from "./components/home/home.component";
-import { LearnMoreComponent } from "./components/learn-more/learn-more.component";
 import { GettingStartedComponent } from "./components/getting-started/getting-started.component";
 
 const routes: Routes = [
-  { path: "learn-more", component: LearnMoreComponent },
   { path: "get-started", component: GettingStartedComponent },
   { path: "", component: HomeComponent },
   { path: "**", redirectTo: "", pathMatch: "full" },
