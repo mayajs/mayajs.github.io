@@ -1,3 +1,9 @@
+.page {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+
 .container {
   padding: .9rem 1rem;
 }
@@ -28,7 +34,7 @@ $desktop: 1280px;
 }
 
 .bg-primary {
-  background-color: color(primary);
+  background-color: color(primary) !important;
   color: #fff;
   padding: 1rem 1rem;
   width: 90%;
@@ -150,14 +156,8 @@ button {
 }
 
 // Side Navigation and Main
-
 .sidenav {
   height: 100%;
-  width: 33%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
   background-color: #fff;
   overflow-x: hidden;
   padding-top: 5rem;
@@ -179,32 +179,6 @@ button {
 }
 
 .main {
-  margin-left: 33rem;
   padding: 0px 1rem;
   text-align: left;
-}
-
-//Introduction
-
-.upper-intro {
-  display: flex;
-}
-
-.welcome-maya {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-}
-
-.text-welcome {
-  text-align: right;
-  padding-right: 3rem;
-}
-
-.import {
-  width: 94%;
-}
-
-.sections {
-  margin-top: 5rem;
 }
