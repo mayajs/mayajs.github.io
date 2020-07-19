@@ -19,7 +19,7 @@ import { GettingStartedComponent } from "./components/getting-started/getting-st
 import { RoutesComponent } from "./components/routes/routes.component";
 import { ControllersComponent } from "./components/controllers/controllers.component";
 import { ModelsComponent } from "./components/models/models.component";
-import { ServicesComponent } from "./components/learn-more/services/services.component";
+import { ServicesComponent } from "./components/services/services.component";
 import { FooterComponent } from "./components/utility/footer/footer.component";
 import { GistComponent } from "./components/gist/gist.component";
 
