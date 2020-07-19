@@ -38,10 +38,6 @@ $desktop: 1280px;
   }
 }
 
-.nav-link .container {
-  padding: .9rem 1rem;
-}
-
 .bg-primary {
   background-color: color(primary) !important;
   color: #fff;
@@ -68,10 +64,9 @@ p {
 }
 
 a {
-  font-weight: 600;
   text-decoration: none;
   color: #fff;
-  font-weight: 100;
+  font-weight: 600;
 }
 
 .text-primary {
@@ -175,7 +170,7 @@ button {
 }
 
 .sidenav a {
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   text-decoration: none;
   font-size: 25px;
   color: color(paragraphs);
