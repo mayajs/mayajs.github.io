@@ -15,6 +15,14 @@ $colors: (primary: #9C1804,
   font-weight: 100;
 }
 
+.simple {
+  width: 70%;
+  font-size: 1.5rem;
+  text-align: justify;
+  align-self: flex-end;
+  padding-right: 3rem;
+}
+
 .upper-intro {
   display: flex;
 }
@@ -23,6 +31,7 @@ $colors: (primary: #9C1804,
   display: flex;
   flex-direction: column;
   text-align: right;
+  font-size: 2.5rem !important;
 }
 
 .text-welcome {
