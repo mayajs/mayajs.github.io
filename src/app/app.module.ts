@@ -17,7 +17,7 @@ import { SubscribedComponent } from "./components/home/subscribed/subscribed.com
 import { DescriptionComponent } from "./components/home/description/description.component";
 import { GettingStartedComponent } from "./components/getting-started/getting-started.component";
 import { RoutesComponent } from "./components/learn-more/routes/routes.component";
-import { ControllersComponent } from "./components/learn-more/controllers/controllers.component";
+import { ControllersComponent } from "./components/controllers/controllers.component";
 import { ModelsComponent } from "./components/learn-more/models/models.component";
 import { ServicesComponent } from "./components/learn-more/services/services.component";
 import { FooterComponent } from "./components/utility/footer/footer.component";
