@@ -4,7 +4,7 @@ import { AppRoutingModule } from "./app-routing.module";
 
 // COMPONENTS
 import { AppComponent } from "./app.component";
-import { SidenavComponent } from "./components/utility/sidenav/sidenav.component";
+import { SidenavComponent } from "./components/sidenav/sidenav.component";
 import { NotFoundComponent } from "./components/utility/not-found/not-found.component";
 import { HomeComponent } from "./components/home/home.component";
 import { IntroductionComponent } from "./components/introduction/introduction.component";
