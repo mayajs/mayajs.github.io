@@ -1,1 +1,83 @@
-<p>getting-started works!</p>
+<div class="sidenav">
+  <a href="#">Introduction</a>
+  <a href="#routes">Routes</a>
+  <a href="#controllers">Controllers</a>
+  <a href="#models">Models</a>
+  <a href="#services">Services</a>
+</div>
+<div class="main">
+  <div class="introduction">
+    <div class="main-introduction">
+      <h1 class="bg-primary">Introduction</h1>
+      <div class="upper-intro">
+        <img src="assets/svg/hello.svg" alt="Hello Illustration" />
+        <div class="welcome-maya">
+          <h2 class="text-welcome">Welcome to MayaJs</h2>
+          <p class="simple">
+            A simple Node.js Framework for creating REST API server-side-applications. MayaJS is designed for simplicity
+            and ease of use for beginners. MayaJS is built using Typescript to take advantage of strongly type checking
+            for easy code troubleshooting in development.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="getting-started">
+      <h1>Getting Started</h1>
+      <p>
+        MayaJS uses express under the hood for routing and middlewares. MayaJS hides any boiler plate code that are hard
+        to setup for begginers when creating any nodejs server applications.
+      </p>
+    </div>
+    <div class="requirements">
+      <h1>Requirements</h1>
+      <p>
+        Controllers, Models and Services are the key features of MayaJS. Developers are no longer to write complicated
+        code MayaJS will do it for them. Validation of request is builtin on MayaJS without any third party library. We
+        are trying to make MayaJS as simple as possible for every type developer.
+      </p>
+    </div>
+    <div class="installation">
+      <h1>Installation</h1>
+      <p>The first thing we need to do is to install MayaJS and other dependencies</p>
+      <p class="bg-copyboard">Run npm i @mayajs/cli -g to install MayaJS globally in your local machine</p>
+    </div>
+  </div>
+  <div class="section-routes sections" id="routes">
+    <h1 class="bg-primary">Routes</h1>
+    <p class="bg-copyboard">maya g c [name-of-controller] via Mayajs CLI.</p>
+    <p>
+      This module handles all the routes for our server. You can define a path for your controllers. You can also add
+      middlewares for your route to use. These middlewares will be executed first before your controller.
+    </p>
+    <img src="assets/svg/import1.svg" alt="" class="import" />
+  </div>
+  <div class="section-controllers sections" id="controllers">
+    <h1 class="bg-primary">Controllers</h1>
+    <p class="bg-copyboard">maya g c [name-of-controller] via Mayajs CLI.</p>
+    <p>
+      Handles all the request. You can define specific middleware or validation here using the METHOD DECORATOR
+      functions. Method decorators are special functions that inject informationt to declaritively specify what type of
+      route is being decorated.
+    </p>
+    <img src="assets/svg/import2.svg" alt="" class="import" />
+  </div>
+  <div class="section-models sections" id="models">
+    <h1 class="bg-primary">Models</h1>
+    <p class="bg-copyboard">maya g m [name-of-model] via Mayajs CLI.</p>
+    <p>
+      This is a moongoose model that the controller will use to mapped the data to be save or modified from a database.
+    </p>
+    <img src="assets/svg/import3.svg" alt="" class="import" />
+  </div>
+
+  <div class="section-services sections" id="services">
+    <h1 class="bg-primary">Services</h1>
+    <p class="bg-copyboard">maya g s [name-of-service] via MayaJs CLI</p>
+    <p>
+      To create a service all you need to do is to run maya g service [name-of-service] or maya g s [name-of-service]
+      via Mayajs CLI. Services can be injected inside of a controller or another service. This will make your code more
+      reusable and shareable across your code base. Below shows a basic code example inside a sevice fiel.
+    </p>
+    <img src="assets/svg/import4.svg" alt="" class="import" />
+  </div>
+</div>

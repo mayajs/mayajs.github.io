@@ -5,7 +5,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "./components/home/home.component";
 import { LearnMoreComponent } from "./components/learn-more/learn-more.component";
 import { FaqComponent } from "./components/faq/faq.component";
-import { GettingStartedComponent } from "./components/learn-more/getting-started/getting-started.component";
+import { GettingStartedComponent } from "./components/getting-started/getting-started.component";
 
 const routes: Routes = [
   { path: "learn-more", component: LearnMoreComponent },

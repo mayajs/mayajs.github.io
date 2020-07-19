@@ -1,0 +1,210 @@
+.container {
+  padding: .9rem 1rem;
+}
+
+$colors: (primary: #9C1804,
+  secondary: #000,
+  paragraphs: #5e5e5e,
+  light: #eeeeee,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name)
+}
+
+$tablet: 840px;
+$desktop: 1280px;
+
+@mixin tablet {
+  @media(min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media(min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+.bg-primary {
+  background-color: color(primary);
+  color: #fff;
+  padding: 1rem 1rem;
+  width: 90%;
+  font-weight: 100;
+
+}
+
+.bg-copyboard {
+  background-color: #e7e7e7;
+  padding: 1.5rem 1rem;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  width: 90%;
+  color: color(paragraphs);
+}
+
+a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 100;
+}
+
+.text-primary {
+  color: color(primary);
+}
+
+//Homepage
+
+.homepage {
+  @include desktop {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  text-align: center;
+  background: url("/assets/svg/bg2.svg") no-repeat;
+  max-width: 100%;
+}
+
+.maya-logo {
+  margin-top: 2rem;
+  width: 80%;
+
+  @include desktop {
+    margin-top: 2rem;
+    width: 80%;
+  }
+}
+
+.landing-text {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  @include desktop {
+    font-size: 1.6rem;
+    padding: .3rem 1rem;
+  }
+}
+
+
+.subheading {
+  font-size: 1rem;
+
+  @include desktop {
+    padding-left: 3rem;
+  }
+}
+
+button {
+  border: 1px solid;
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 2%;
+  width: 80%;
+
+  @include desktop {
+    width: 15%;
+    margin-top: .3rem;
+    margin-right: 1rem;
+  }
+}
+
+.btn-get-started {
+  background: color(primary);
+  padding: 1.3em;
+  color: color(light);
+  font-weight: bold;
+
+  &:hover {
+    background: color(light);
+    color: color(primary);
+  }
+}
+
+.btn-github {
+  background: transparent;
+  padding: 1.3em;
+  color: color(secondary);
+  border: 1px solid;
+  font-weight: bold;
+
+  &:hover {
+    background: color(secondary);
+    color: color(light);
+  }
+}
+
+// Side Navigation and Main
+
+.sidenav {
+  height: 100%;
+  width: 33%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 5rem;
+  padding-left: 2rem;
+  border-right: .5px solid #000;
+}
+
+.sidenav a {
+  padding-bottom: 3rem;
+  text-decoration: none;
+  font-size: 25px;
+  color: color(paragraphs);
+  display: block;
+  text-align: left;
+}
+
+.sidenav a:hover {
+  color: color(primary);
+}
+
+.main {
+  margin-left: 33rem;
+  padding: 0px 1rem;
+  text-align: left;
+}
+
+//Introduction
+
+.upper-intro {
+  display: flex;
+}
+
+.welcome-maya {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.text-welcome {
+  text-align: right;
+  padding-right: 3rem;
+}
+
+.import {
+  width: 94%;
+}
+
+.sections {
+  margin-top: 5rem;
+}

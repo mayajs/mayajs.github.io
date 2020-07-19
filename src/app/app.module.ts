@@ -18,7 +18,7 @@ import { VisionComponent } from "./components/home/vision/vision.component";
 import { KeyFeaturesComponent } from "./components/home/key-features/key-features.component";
 import { SubscribedComponent } from "./components/home/subscribed/subscribed.component";
 import { DescriptionComponent } from "./components/home/description/description.component";
-import { GettingStartedComponent } from "./components/learn-more/getting-started/getting-started.component";
+import { GettingStartedComponent } from "./components/getting-started/getting-started.component";
 import { RequirementsComponent } from "./components/learn-more/requirements/requirements.component";
 import { InstallationComponent } from "./components/learn-more/installation/installation.component";
 import { RoutesComponent } from "./components/learn-more/routes/routes.component";
