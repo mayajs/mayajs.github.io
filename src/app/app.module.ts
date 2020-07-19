@@ -9,7 +9,7 @@ import { AppComponent } from "./app.component";
 import { SidenavComponent } from "./components/utility/sidenav/sidenav.component";
 import { NotFoundComponent } from "./components/utility/not-found/not-found.component";
 import { HomeComponent } from "./components/home/home.component";
-import { IntroductionComponent } from "./components/learn-more/introduction/introduction.component";
+import { IntroductionComponent } from "./components/introduction/introduction.component";
 import { FaqComponent } from "./components/faq/faq.component";
 import { GuidesComponent } from "./components/guides/guides.component";
 import { LearnMoreComponent } from "./components/learn-more/learn-more.component";
