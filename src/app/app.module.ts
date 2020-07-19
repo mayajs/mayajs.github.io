@@ -18,7 +18,7 @@ import { DescriptionComponent } from "./components/home/description/description.
 import { GettingStartedComponent } from "./components/getting-started/getting-started.component";
 import { RoutesComponent } from "./components/learn-more/routes/routes.component";
 import { ControllersComponent } from "./components/controllers/controllers.component";
-import { ModelsComponent } from "./components/learn-more/models/models.component";
+import { ModelsComponent } from "./components/models/models.component";
 import { ServicesComponent } from "./components/learn-more/services/services.component";
 import { FooterComponent } from "./components/utility/footer/footer.component";
 import { GistComponent } from "./components/gist/gist.component";
