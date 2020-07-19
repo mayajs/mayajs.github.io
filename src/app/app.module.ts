@@ -19,8 +19,6 @@ import { KeyFeaturesComponent } from "./components/home/key-features/key-feature
 import { SubscribedComponent } from "./components/home/subscribed/subscribed.component";
 import { DescriptionComponent } from "./components/home/description/description.component";
 import { GettingStartedComponent } from "./components/getting-started/getting-started.component";
-import { RequirementsComponent } from "./components/learn-more/requirements/requirements.component";
-import { InstallationComponent } from "./components/learn-more/installation/installation.component";
 import { RoutesComponent } from "./components/learn-more/routes/routes.component";
 import { ControllersComponent } from "./components/learn-more/controllers/controllers.component";
 import { ModelsComponent } from "./components/learn-more/models/models.component";
@@ -47,8 +45,6 @@ import { GistComponent } from "./components/gist/gist.component";
     SubscribedComponent,
     DescriptionComponent,
     GettingStartedComponent,
-    RequirementsComponent,
-    InstallationComponent,
     RoutesComponent,
     ControllersComponent,
     ModelsComponent,
