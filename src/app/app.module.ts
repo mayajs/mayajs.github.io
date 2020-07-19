@@ -27,6 +27,7 @@ import { ModelsComponent } from "./components/learn-more/models/models.component
 import { ServicesComponent } from "./components/learn-more/services/services.component";
 import { FooterComponent } from "./components/utility/footer/footer.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
+import { GistComponent } from "./components/gist/gist.component";
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
     ServicesComponent,
     FooterComponent,
     NavbarComponent,
+    GistComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
