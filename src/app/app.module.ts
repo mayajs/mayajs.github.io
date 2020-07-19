@@ -23,7 +23,6 @@ import { ControllersComponent } from "./components/learn-more/controllers/contro
 import { ModelsComponent } from "./components/learn-more/models/models.component";
 import { ServicesComponent } from "./components/learn-more/services/services.component";
 import { FooterComponent } from "./components/utility/footer/footer.component";
-import { NavbarComponent } from "./components/navbar/navbar.component";
 import { GistComponent } from "./components/gist/gist.component";
 
 @NgModule({
@@ -48,7 +47,6 @@ import { GistComponent } from "./components/gist/gist.component";
     ModelsComponent,
     ServicesComponent,
     FooterComponent,
-    NavbarComponent,
     GistComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
