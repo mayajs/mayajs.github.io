@@ -8,45 +8,6 @@
   </div>
   <div class="main">
     <app-introduction></app-introduction>
-
-    <div class="section-routes sections" id="routes">
-      <h1 class="bg-primary">Routes</h1>
-      <p class="bg-copyboard">maya g c [name-of-controller] via Mayajs CLI.</p>
-      <p>
-        This module handles all the routes for our server. You can define a path for your controllers. You can also add
-        middlewares for your route to use. These middlewares will be executed first before your controller.
-      </p>
-      <img src="assets/svg/import1.svg" alt="" class="import" />
-    </div>
-    <div class="section-controllers sections" id="controllers">
-      <h1 class="bg-primary">Controllers</h1>
-      <p class="bg-copyboard">maya g c [name-of-controller] via Mayajs CLI.</p>
-      <p>
-        Handles all the request. You can define specific middleware or validation here using the METHOD DECORATOR
-        functions. Method decorators are special functions that inject informationt to declaritively specify what type
-        of route is being decorated.
-      </p>
-      <img src="assets/svg/import2.svg" alt="" class="import" />
-    </div>
-    <div class="section-models sections" id="models">
-      <h1 class="bg-primary">Models</h1>
-      <p class="bg-copyboard">maya g m [name-of-model] via Mayajs CLI.</p>
-      <p>
-        This is a moongoose model that the controller will use to mapped the data to be save or modified from a
-        database.
-      </p>
-      <img src="assets/svg/import3.svg" alt="" class="import" />
-    </div>
-
-    <div class="section-services sections" id="services">
-      <h1 class="bg-primary">Services</h1>
-      <p class="bg-copyboard">maya g s [name-of-service] via MayaJs CLI</p>
-      <p>
-        To create a service all you need to do is to run maya g service [name-of-service] or maya g s [name-of-service]
-        via Mayajs CLI. Services can be injected inside of a controller or another service. This will make your code
-        more reusable and shareable across your code base. Below shows a basic code example inside a sevice fiel.
-      </p>
-      <img src="assets/svg/import4.svg" alt="" class="import" />
-    </div>
+    <app-routes></app-routes>
   </div>
 </div>
