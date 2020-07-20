@@ -63,8 +63,6 @@ a {
   color: color(primary);
 }
 
-//Homepage
-
 .homepage {
   @include desktop {
     padding-top: 2rem;
@@ -73,7 +71,9 @@ a {
 
   text-align: center;
   background: url("/assets/svg/bg2.svg") no-repeat;
+  background-size: cover;
   max-width: 100%;
+  height: 100%;
 }
 
 .maya-logo {
