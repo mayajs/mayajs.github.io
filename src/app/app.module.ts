@@ -9,7 +9,6 @@ import { HomeComponent } from "./components/home/home.component";
 import { IntroductionComponent } from "./components/introduction/introduction.component";
 import { MissionComponent } from "./components/mission/mission.component";
 import { VisionComponent } from "./components/vision/vision.component";
-import { KeyFeaturesComponent } from "./components/home/key-features/key-features.component";
 import { SubscribedComponent } from "./components/home/subscribed/subscribed.component";
 import { GettingStartedComponent } from "./components/getting-started/getting-started.component";
 import { RoutesComponent } from "./components/routes/routes.component";
@@ -26,7 +25,6 @@ import { GistComponent } from "./components/gist/gist.component";
     IntroductionComponent,
     MissionComponent,
     VisionComponent,
-    KeyFeaturesComponent,
     SubscribedComponent,
     GettingStartedComponent,
     RoutesComponent,
