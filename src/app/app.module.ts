@@ -8,7 +8,7 @@ import { SidenavComponent } from "./components/sidenav/sidenav.component";
 import { HomeComponent } from "./components/home/home.component";
 import { IntroductionComponent } from "./components/introduction/introduction.component";
 import { MissionComponent } from "./components/home/mission/mission.component";
-import { VisionComponent } from "./components/home/vision/vision.component";
+import { VisionComponent } from "./components/vision/vision.component";
 import { KeyFeaturesComponent } from "./components/home/key-features/key-features.component";
 import { SubscribedComponent } from "./components/home/subscribed/subscribed.component";
 import { DescriptionComponent } from "./components/home/description/description.component";
