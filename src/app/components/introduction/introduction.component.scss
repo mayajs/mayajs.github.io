@@ -1,4 +1,4 @@
-$colors: (primary: #9C1804,
+$colors: (primary: #dd1f02,
   secondary: #000,
   paragraphs: #5e5e5e,
   light: #eeeeee,
@@ -35,4 +35,11 @@ section {
   padding: 1rem;
   border-radius: .1rem;
   font-weight: 600;
+}
+
+.link {
+  font-size: large;
+  font-weight: 600;
+  text-decoration-line: underline;
+  color: color(primary);
 }
