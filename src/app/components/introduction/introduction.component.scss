@@ -8,45 +8,6 @@ $colors: (primary: #9C1804,
   @return map-get($colors, $color-name);
 }
 
-.bg-primary {
-  background-color: color(primary) !important;
-  color: #fff;
-  padding: 1rem 1rem;
-  font-weight: 100;
-}
-
-.simple {
-  width: 70%;
-  font-size: 1.5rem;
-  text-align: justify;
-  align-self: flex-end;
-  padding-right: 3rem;
-}
-
-.upper-intro {
-  display: flex;
-}
-
-.welcome-maya {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-  font-size: 2.5rem !important;
-}
-
-.text-welcome {
-  text-align: right;
-  padding-right: 3rem;
-}
-
-.import {
-  width: 94%;
-}
-
-.sections {
-  padding-top: 5rem;
-}
-
 .bg-copyboard {
   background-color: #e7e7e7;
   padding: 1.5rem 1rem;
