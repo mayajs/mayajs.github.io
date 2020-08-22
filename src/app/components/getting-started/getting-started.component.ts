@@ -19,20 +19,22 @@ export class GettingStartedComponent implements OnInit {
       ],
     },
     {
-      title: "Routes",
-      url: "routes",
-    },
-    {
-      title: "Controllers",
-      url: "controllers",
-    },
-    {
-      title: "Models",
-      url: "models",
-    },
-    {
-      title: "Service",
-      url: "services",
+      title: "Route",
+      url: "route",
+      sub: [
+        {
+          title: "Controllers",
+          url: "controllers",
+        },
+        {
+          title: "Models",
+          url: "models",
+        },
+        {
+          title: "Service",
+          url: "services",
+        },
+      ],
     },
   ];
 
