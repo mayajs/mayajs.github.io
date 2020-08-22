@@ -8,6 +8,18 @@ $colors: (primary: #9C1804,
   @return map-get($colors, $color-name);
 }
 
+section {
+  padding-left: 5rem;
+}
+
+.topic {
+  padding-bottom: 2rem;
+}
+
+.content {
+  padding-left: 2rem;
+}
+
 .bg-copyboard {
   background-color: #e7e7e7;
   padding: 1.5rem 1rem;
