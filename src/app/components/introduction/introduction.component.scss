@@ -10,17 +10,29 @@ $colors: (primary: #9C1804,
 
 section {
   padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .topic {
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .content {
   padding-left: 2rem;
 }
 
-.bg-copyboard {
-  background-color: #e7e7e7;
-  padding: 1.5rem 1rem;
+.highlight {
+  background-color: #faa2a257;
+  margin: 1.5rem 2rem;
+  padding: 1rem;
+  border-radius: .25rem;
+  font-weight: 400;
+}
+
+.code {
+  background-color: #c4c4c457;
+  margin: 1.5rem 2rem;
+  padding: 1rem;
+  border-radius: .1rem;
+  font-weight: 600;
 }
