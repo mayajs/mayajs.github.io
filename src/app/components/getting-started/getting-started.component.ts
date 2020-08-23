@@ -65,6 +65,10 @@ export class GettingStartedComponent implements OnInit {
       ],
     },
     {
+      title: "Routing",
+      url: "routing",
+    },
+    {
       title: "Middlewares",
       url: "middlewares",
     },
