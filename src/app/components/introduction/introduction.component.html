@@ -1,6 +1,6 @@
 <section class="introduction mt-5">
   <div class="topic">
-    <h3 class="mb-3">Getting Started</h3>
+    <h4 class="mb-3">Getting Started</h4>
     <p class="content highlight">
       In order to start using mayajs you must install the latest stable version of
       <a href="https://nodejs.org/en/" class="link">Nodejs</a> on your local machine. Having a prior knowledge in
@@ -10,15 +10,16 @@
     </p>
   </div>
   <div class="topic">
-    <h3 class="mb-3">Requirements</h3>
-    <p class="content">
-      Controllers, Models and Services are the key features of MayaJS. Developers are no longer to write complicated
-      code MayaJS will do it for them. Validation of request is builtin on MayaJS without any third party library. We
-      are trying to make MayaJS as simple as possible for every type developer.
-    </p>
+    <h4 class="mb-3">Overview</h4>
+    <p class="content">Mayajs is consist of several npm packages on its ecosystem.</p>
+    <ul>
+      <li *ngFor="let package of packages">
+        <a href="{{ package.url }}" class="link">{{ package.name }}</a> - <span>{{ package.description }}</span>
+      </li>
+    </ul>
   </div>
   <div class="topic">
-    <h3 class="mb-3">Installation</h3>
+    <h4 class="mb-3">Installation</h4>
     <p class="content">
       The first thing we need to do is to install MayaJS and other dependencies. Run this command below to install
       MayaJS globally in your local machine.
