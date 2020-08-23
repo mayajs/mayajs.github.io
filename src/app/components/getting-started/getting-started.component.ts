@@ -36,6 +36,24 @@ export class GettingStartedComponent implements OnInit {
         },
       ],
     },
+    {
+      title: "Databases",
+      url: "databases",
+      sub: [
+        {
+          title: "Mongodb",
+          url: "mongo",
+        },
+        {
+          title: "SQL",
+          url: "sql",
+        },
+        {
+          title: "Postgres",
+          url: "postgres",
+        },
+      ],
+    },
   ];
 
   constructor(public router: Router) {}
