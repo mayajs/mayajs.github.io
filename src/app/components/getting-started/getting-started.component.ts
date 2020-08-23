@@ -65,6 +65,10 @@ export class GettingStartedComponent implements OnInit {
       ],
     },
     {
+      title: "Middlewares",
+      url: "middlewares",
+    },
+    {
       title: "Validation",
       url: "validation",
     },
