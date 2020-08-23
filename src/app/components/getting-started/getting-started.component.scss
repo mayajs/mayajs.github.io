@@ -3,27 +3,28 @@
   grid-template-columns: 250px 6fr;
 }
 
-$colors: (primary: #dd1f02,
+$colors: (
+  primary: #dd1f02,
   secondary: #000,
   paragraphs: #5e5e5e,
   light: #eeeeee,
 );
 
 @function color($color-name) {
-  @return map-get($colors, $color-name)
+  @return map-get($colors, $color-name);
 }
 
 $tablet: 840px;
 $desktop: 1280px;
 
 @mixin tablet {
-  @media(min-width: #{$tablet}) {
+  @media (min-width: #{$tablet}) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media(min-width: #{$desktop}) {
+  @media (min-width: #{$desktop}) {
     @content;
   }
 }
@@ -39,11 +40,14 @@ $desktop: 1280px;
 
 // Side Navigation and Main
 .sidenav {
-  height: 100%;
+  height: 100vh;
   background-color: #fff;
   overflow-x: hidden;
   padding-top: 3rem;
-  border-right: .5px solid #dddddd;
+  border-right: 0.5px solid #dddddd;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 
   h3 {
     font-weight: 300;
@@ -89,7 +93,6 @@ $desktop: 1280px;
       }
     }
   }
-
 }
 
 .main {
