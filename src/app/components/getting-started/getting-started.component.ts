@@ -19,8 +19,8 @@ export class GettingStartedComponent implements OnInit {
       ],
     },
     {
-      title: "Route",
-      url: "route",
+      title: "Components",
+      url: "components",
       sub: [
         {
           title: "Controllers",
