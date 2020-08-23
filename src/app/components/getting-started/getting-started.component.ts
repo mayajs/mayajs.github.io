@@ -65,6 +65,10 @@ export class GettingStartedComponent implements OnInit {
       ],
     },
     {
+      title: "Validation",
+      url: "validation",
+    },
+    {
       title: "FAQs",
       url: "faqs",
     },
