@@ -96,8 +96,10 @@ $desktop: 1280px;
             font-weight: 400;
 
             &:hover {
+              border-radius: 5px;
               color: color(primary);
-              background-color: color(light);
+              font-weight: 600;
+              background-color: #ffc1c159;
               text-decoration-line: underline;
             }
           }
