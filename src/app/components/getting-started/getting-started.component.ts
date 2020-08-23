@@ -64,6 +64,10 @@ export class GettingStartedComponent implements OnInit {
         },
       ],
     },
+    {
+      title: "FAQs",
+      url: "faqs",
+    },
   ];
 
   constructor(public router: Router) {}
