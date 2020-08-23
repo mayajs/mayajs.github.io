@@ -13,7 +13,7 @@ export class GettingStartedComponent implements OnInit {
       url: "introduction",
       sub: [
         { title: "Getting Started", url: "getting-started" },
-        { title: "Requirements", url: "requirements" },
+        { title: "Overview", url: "overview" },
         { title: "Installation", url: "installation" },
         { title: "Imports", url: "imports" },
       ],
