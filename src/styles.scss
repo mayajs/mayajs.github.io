@@ -7,3 +7,18 @@ html {
   margin: 0;
   padding: 0;
 }
+
+body::-webkit-scrollbar {
+  background-color: #ffc1c1;
+  width: .5em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(129, 129, 129, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #dd1f02cc;
+  outline: 1px solid slategrey;
+}
