@@ -66,6 +66,32 @@ export class GettingStartedComponent implements OnInit {
       ],
     },
     {
+      title: "Methods",
+      url: "methods",
+      sub: [
+        {
+          title: "GET",
+          url: "get",
+        },
+        {
+          title: "POST",
+          url: "post",
+        },
+        {
+          title: "PUT",
+          url: "put",
+        },
+        {
+          title: "PATCH",
+          url: "patch",
+        },
+        {
+          title: "DELETE",
+          url: "delte",
+        },
+      ],
+    },
+    {
       title: "Routing",
       url: "routing",
     },
