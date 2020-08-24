@@ -51,7 +51,6 @@ section {
 
     a {
       color: color(primary);
-
     }
   }
 }
@@ -64,6 +63,16 @@ section {
 
     a {
       color: #cccccc;
+    }
+  }
+
+  &:hover {
+    color: #000000;
+
+    h4 {
+      a {
+        color: color(primary);
+      }
     }
   }
 }
