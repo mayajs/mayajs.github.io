@@ -33,80 +33,35 @@ export class GettingStartedComponent implements OnInit {
       title: "Components",
       url: "components",
       sub: [
-        {
-          title: "Controllers",
-          url: "controllers",
-        },
-        {
-          title: "Models",
-          url: "models",
-        },
-        {
-          title: "Service",
-          url: "services",
-        },
+        { title: "Controllers", url: "controllers" },
+        { title: "Models", url: "models" },
+        { title: "Service", url: "services" },
       ],
     },
     {
       title: "Databases",
       url: "databases",
       sub: [
-        {
-          title: "Mongodb",
-          url: "mongo",
-        },
-        {
-          title: "SQL",
-          url: "sql",
-        },
-        {
-          title: "Postgres",
-          url: "postgres",
-        },
+        { title: "Mongodb", url: "mongo" },
+        { title: "SQL", url: "sql" },
+        { title: "Postgres", url: "postgres" },
       ],
     },
     {
       title: "Methods",
       url: "methods",
       sub: [
-        {
-          title: "GET",
-          url: "get",
-        },
-        {
-          title: "POST",
-          url: "post",
-        },
-        {
-          title: "PUT",
-          url: "put",
-        },
-        {
-          title: "PATCH",
-          url: "patch",
-        },
-        {
-          title: "DELETE",
-          url: "delte",
-        },
+        { title: "GET", url: "get" },
+        { title: "POST", url: "post" },
+        { title: "PUT", url: "put" },
+        { title: "PATCH", url: "patch" },
+        { title: "DELETE", url: "delte" },
       ],
     },
-    {
-      title: "Routing",
-      url: "routing",
-    },
-    {
-      title: "Middlewares",
-      url: "middlewares",
-    },
-    {
-      title: "Validation",
-      url: "validation",
-    },
-    {
-      title: "FAQs",
-      url: "faqs",
-    },
+    { title: "Routing", url: "routing" },
+    { title: "Middlewares", url: "middlewares" },
+    { title: "Validation", url: "validation" },
+    { itle: "FAQs", url: "faqs" },
   ];
 
   constructor(public router: Router) {}
