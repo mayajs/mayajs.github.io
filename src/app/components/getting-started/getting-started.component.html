@@ -5,20 +5,16 @@
     </div>
     <ul class="nav flex-column">
       <li class="nav-item" *ngFor="let navItem of navItems">
-        <a *ngIf="!navItem.sub" class="nav-link main-menu" (click)="navigateUrl(navItem.url)">
-          {{ navItem.title }}
+        <a class="nav-link main-menu">
+          <span (click)="gotoPage(navItem.url)"> {{ navItem.title }}</span>
         </a>
-
-        <a *ngIf="navItem.sub" class="nav-link main-menu">
-          <span (click)="navigateUrl(navItem.url)"> {{ navItem.title }}</span>
-          <ul class="sub-link">
-            <li *ngFor="let sub of navItem.sub">
-              <a class="nav-link sub-menu">
-                <span (click)="navigateUrl(sub.url)">{{ sub.title }}</span>
-              </a>
-            </li>
-          </ul>
-        </a>
+        <ul *ngIf="navItem.sub" class="sub-link">
+          <li *ngFor="let sub of navItem.sub">
+            <a class="nav-link sub-menu">
+              <span (click)="navigateUrl(sub.url)">{{ sub.title }}</span>
+            </a>
+          </li>
+        </ul>
       </li>
     </ul>
   </div>
