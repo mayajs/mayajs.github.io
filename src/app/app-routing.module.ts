@@ -1,20 +1,37 @@
 import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
+import { Routes, RouterModule, ExtraOptions } from "@angular/router";
 
 // COMPONENTS
 import { HomeComponent } from "./components/home/home.component";
-import { LearnMoreComponent } from "./components/learn-more/learn-more.component";
-import { FaqComponent } from "./components/faq/faq.component";
+import { GettingStartedComponent } from "./components/getting-started/getting-started.component";
+import { IntroductionComponent } from "./components/introduction/introduction.component";
+import { RoutesComponent } from "./components/routes/routes.component";
+import { WhyMayajsComponent } from "./components/why-mayajs/why-mayajs.component";
 
 const routes: Routes = [
-  { path: "learn-more", component: LearnMoreComponent },
-  { path: "faq", component: FaqComponent },
+  {
+    path: "get-started",
+    component: GettingStartedComponent,
+    children: [
+      { path: "introduction", component: IntroductionComponent },
+      { path: "why-mayajs", component: WhyMayajsComponent },
+      { path: "route", component: RoutesComponent },
+      { path: "", redirectTo: "introduction", pathMatch: "full" },
+      { path: "**", redirectTo: "introduction", pathMatch: "full" },
+    ],
+  },
   { path: "", component: HomeComponent },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];
 
+const router: ExtraOptions = {
+  scrollPositionRestoration: "enabled",
+  anchorScrolling: "enabled",
+  scrollOffset: [0, 10],
+};
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, router)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

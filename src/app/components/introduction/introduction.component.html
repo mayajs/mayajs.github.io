@@ -1,0 +1,74 @@
+<section class="introduction mt-5">
+  <div class="topic">
+    <h4 class="mb-3" id="getting-started">Getting Started</h4>
+    <p class="content highlight">
+      In order to start using mayajs you must install the latest stable version of
+      <a href="https://nodejs.org/en/" class="link">Nodejs</a> on your local machine. Having a prior knowledge in
+      <a href="https://www.typescriptlang.org/" class="link">Typescript</a> or
+      <a href="https://angular.io/" class="link">Angular</a> will help you alot. Like angular, mayajs uses typescript
+      and much of the syntax implemented are heavily inspired from it.
+    </p>
+  </div>
+  <div class="topic">
+    <h4 class="mb-3" id="overview">Overview</h4>
+    <p class="content">
+      Mayajs is an ecosystem consist of several npm packages. All this packages are maintained by
+      <a href="" class="link">Mayajs Core Team</a>.
+    </p>
+    <ul>
+      <li *ngFor="let package of packages">
+        <a href="{{ package.url }}" class="link">{{ package.name }}</a> - <span>{{ package.description }}</span>
+      </li>
+    </ul>
+  </div>
+  <div class="topic">
+    <h4 class="mb-3" id="installation">Installation</h4>
+    <p class="content">
+      The first thing we need to do is to install mayajs CLI globally in your local machine for project scaffolding.
+    </p>
+    <p class="content code">npm i @mayajs/cli -g</p>
+    <p class="content">
+      After installing the CLI we need to check if mayajs is recognized by the machine. This command will show the
+      current version of mayajs installed in your machine.
+    </p>
+    <p class="content code">maya -v</p>
+    <p class="content">
+      This command will show all the available commands that can be use for your mayajs app.
+    </p>
+    <p class="content code">maya</p>
+    <p class="content">
+      Now mayajs is properly installed to your machine. It is time to create a basic mayajs project. For this purpose we
+      will use mayajs CLI commands to generate the files necessary for you to run your first mayajs application.
+    </p>
+    <p class="content code">maya new "name-of-your-app"</p>
+  </div>
+  <div class="topic">
+    <h4 class="mb-3" id="imports">Imports</h4>
+    <p class="content">To import mayajs to your existing project.</p>
+    <p class="content code">{{ import }}</p>
+  </div>
+  <div class="topic">
+    <h4 class="mb-3" id="development">Development</h4>
+    <p class="content">
+      You have created your first mayajs app but you don't know how to run it. Using the CLI commands you can run your
+      app. But first you need to navigate to your app folder.
+    </p>
+    <p class="content code">cd "directory-of-your-app"</p>
+    <p class="content">
+      After you navigated to your app folder we can run the command to serve your mayajs app. The app will run on
+      <b>PORT:3333</b> by default.
+    </p>
+    <p class="content code">maya serve</p>
+    <p class="content">
+      To change the port you can just add the <b>--port="port-number"</b> as a flag with the command above.
+    </p>
+    <p class="content code">maya serve --port=4444</p>
+  </div>
+  <hr />
+  <div class="row justify-content-end pr-2 mb-5">
+    <div class="col-md-2 text-right">
+      <p class="m-0"><b>NEXT ></b></p>
+      <h4 class="text-right"><a routerLink="/get-started/why-mayajs" class="next">Why Mayajs?</a></h4>
+    </div>
+  </div>
+</section>
