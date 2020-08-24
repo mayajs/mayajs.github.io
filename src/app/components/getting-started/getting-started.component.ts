@@ -86,7 +86,7 @@ export class GettingStartedComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  navigateUrl(value: string) {
+  gotoFragment(value: string) {
     this.router.navigate([], { fragment: value });
   }
 

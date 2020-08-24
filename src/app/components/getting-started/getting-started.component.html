@@ -11,7 +11,7 @@
         <ul *ngIf="navItem.sub" class="sub-link">
           <li *ngFor="let sub of navItem.sub">
             <a class="nav-link sub-menu">
-              <span (click)="navigateUrl(sub.url)">{{ sub.title }}</span>
+              <span (click)="gotoFragment(sub.url)">{{ sub.title }}</span>
             </a>
           </li>
         </ul>
