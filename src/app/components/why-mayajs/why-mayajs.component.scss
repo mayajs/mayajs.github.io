@@ -45,6 +45,25 @@ section {
 }
 
 .next {
-  text-decoration-line: underline;
-  color: color(primary);
+
+  h4 {
+    text-decoration-line: underline;
+
+    a {
+      color: color(primary);
+
+    }
+  }
+}
+
+.previous {
+  color: #cccccc;
+
+  h4 {
+    text-decoration-line: underline;
+
+    a {
+      color: #cccccc;
+    }
+  }
 }
