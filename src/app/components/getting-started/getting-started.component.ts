@@ -24,7 +24,7 @@ export class GettingStartedComponent implements OnInit {
       url: "why-mayajs",
       sub: [
         { title: "Easy to use", url: "easy" },
-        { title: "Simplicity", url: "simplicity" },
+        { title: "Simple", url: "simplicity" },
         { title: "Typescript", url: "typescript" },
         { title: "In between", url: "inbetween" },
       ],
