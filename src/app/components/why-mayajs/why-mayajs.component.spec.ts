@@ -1,19 +1,19 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { GettingStartedComponent } from "./getting-started.component";
+import { WhyMayajsComponent } from "./why-mayajs.component";
 
-describe("GettingStartedComponent", () => {
-  let component: GettingStartedComponent;
-  let fixture: ComponentFixture<GettingStartedComponent>;
+describe("WhyMayajsComponent", () => {
+  let component: WhyMayajsComponent;
+  let fixture: ComponentFixture<WhyMayajsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [GettingStartedComponent],
+      declarations: [WhyMayajsComponent],
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GettingStartedComponent);
+    fixture = TestBed.createComponent(WhyMayajsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -49,7 +49,7 @@ $desktop: 1280px;
 .sidenav::-webkit-scrollbar-thumb {
   height: 50px;
   border-radius: 10px;
-  background-color: #dd1f02cc;
+  background-color: #ff7b7b;
   outline: 1px solid slategrey;
 }
 
@@ -78,37 +78,41 @@ $desktop: 1280px;
     &.main-menu {
       color: color(secondary);
       font-weight: 600;
+
+      &:hover {
+        text-decoration-line: underline;
+      }
     }
+  }
+}
 
-    .sub-link {
-      list-style-type: none;
-      margin: 0;
-      padding-left: 0;
+.sub-link {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 1rem;
 
-      li {
-        text-indent: -5px;
+  li {
+    text-indent: -5px;
 
-        a {
-          text-decoration: none;
-          color: color(paragraphs);
+    a {
+      text-decoration: none;
+      color: color(paragraphs);
 
-          &.sub-menu {
-            font-weight: 400;
+      &.sub-menu {
+        font-weight: 400;
 
-            &:hover {
-              border-radius: 5px;
-              color: color(primary);
-              font-weight: 600;
-              background-color: #ffc1c159;
-              text-decoration-line: underline;
-            }
-          }
-        }
-
-        a:before {
-          text-indent: 10px;
+        &:hover {
+          border-radius: 5px;
+          color: color(primary);
+          font-weight: 600;
+          background-color: #ffc1c159;
+          text-decoration-line: underline;
         }
       }
+    }
+
+    a:before {
+      text-indent: 10px;
     }
   }
 }

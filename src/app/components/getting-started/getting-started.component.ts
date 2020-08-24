@@ -16,14 +16,15 @@ export class GettingStartedComponent implements OnInit {
         { title: "Overview", url: "overview" },
         { title: "Installation", url: "installation" },
         { title: "Imports", url: "imports" },
+        { title: "Development", url: "development" },
       ],
     },
     {
       title: "Why Mayajs?",
-      url: "why",
+      url: "why-mayajs",
       sub: [
         { title: "Easy to use", url: "easy" },
-        { title: "Simplicity", url: "simplicity" },
+        { title: "Simple", url: "simplicity" },
         { title: "Typescript", url: "typescript" },
         { title: "In between", url: "inbetween" },
       ],
@@ -32,61 +33,46 @@ export class GettingStartedComponent implements OnInit {
       title: "Components",
       url: "components",
       sub: [
-        {
-          title: "Controllers",
-          url: "controllers",
-        },
-        {
-          title: "Models",
-          url: "models",
-        },
-        {
-          title: "Service",
-          url: "services",
-        },
+        { title: "Controllers", url: "controllers" },
+        { title: "Models", url: "models" },
+        { title: "Service", url: "services" },
       ],
     },
     {
       title: "Databases",
       url: "databases",
       sub: [
-        {
-          title: "Mongodb",
-          url: "mongo",
-        },
-        {
-          title: "SQL",
-          url: "sql",
-        },
-        {
-          title: "Postgres",
-          url: "postgres",
-        },
+        { title: "Mongodb", url: "mongo" },
+        { title: "SQL", url: "sql" },
+        { title: "Postgres", url: "postgres" },
       ],
     },
     {
-      title: "Routing",
-      url: "routing",
+      title: "Methods",
+      url: "methods",
+      sub: [
+        { title: "GET", url: "get" },
+        { title: "POST", url: "post" },
+        { title: "PUT", url: "put" },
+        { title: "PATCH", url: "patch" },
+        { title: "DELETE", url: "delte" },
+      ],
     },
-    {
-      title: "Middlewares",
-      url: "middlewares",
-    },
-    {
-      title: "Validation",
-      url: "validation",
-    },
-    {
-      title: "FAQs",
-      url: "faqs",
-    },
+    { title: "Routing", url: "routing" },
+    { title: "Middlewares", url: "middlewares" },
+    { title: "Validation", url: "validation" },
+    { itle: "FAQs", url: "faqs" },
   ];
 
   constructor(public router: Router) {}
 
   ngOnInit(): void {}
 
-  navigateUrl(value: string) {
-    this.router.navigate([], { fragment: value });
+  gotoFragment(value: string, fragment: string) {
+    this.router.navigate([`/get-started/${value}`], { fragment });
+  }
+
+  gotoPage(value: string) {
+    this.router.navigate([`/get-started/${value}`]);
   }
 }

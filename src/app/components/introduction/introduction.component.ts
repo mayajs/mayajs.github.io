@@ -6,6 +6,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./introduction.component.scss"],
 })
 export class IntroductionComponent implements OnInit {
+  import = `import { MayaJS } from "@mayajs/core";`;
   packages = [
     {
       name: "@mayajs/core",

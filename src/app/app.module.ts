@@ -15,6 +15,7 @@ import { ControllersComponent } from "./components/controllers/controllers.compo
 import { ModelsComponent } from "./components/models/models.component";
 import { ServicesComponent } from "./components/services/services.component";
 import { GistComponent } from "./components/gist/gist.component";
+import { WhyMayajsComponent } from "./components/why-mayajs/why-mayajs.component";
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { GistComponent } from "./components/gist/gist.component";
     ModelsComponent,
     ServicesComponent,
     GistComponent,
+    WhyMayajsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
