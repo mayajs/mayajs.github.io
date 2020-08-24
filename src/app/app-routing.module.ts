@@ -6,6 +6,7 @@ import { HomeComponent } from "./components/home/home.component";
 import { GettingStartedComponent } from "./components/getting-started/getting-started.component";
 import { IntroductionComponent } from "./components/introduction/introduction.component";
 import { RoutesComponent } from "./components/routes/routes.component";
+import { WhyMayajsComponent } from "./components/why-mayajs/why-mayajs.component";
 
 const routes: Routes = [
   {
@@ -13,7 +14,7 @@ const routes: Routes = [
     component: GettingStartedComponent,
     children: [
       { path: "introduction", component: IntroductionComponent },
-      { path: "why", component: HomeComponent },
+      { path: "why-mayajs", component: WhyMayajsComponent },
       { path: "route", component: RoutesComponent },
       { path: "", redirectTo: "introduction", pathMatch: "full" },
       { path: "**", redirectTo: "introduction", pathMatch: "full" },
