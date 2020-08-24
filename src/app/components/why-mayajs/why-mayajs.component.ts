@@ -16,9 +16,19 @@ export class WhyMayajsComponent implements OnInit {
     "Declarative way of defining routes.",
     "Adding route files has gotten easy using our CLI.",
     "Business logic can be shared using services.",
-    "Less runtime error with type checking using Typescript.",
     "Create method routes using method declaration.",
+    "Not heavily relies on typescript declarations like what others framework does.",
   ];
+
+  tsList = [
+    "Declarations for defining methods, controllers and services.",
+    "Dependency injection and meta-programming.",
+    "Safer codes for development and production.",
+    "Uses latest and upcomming javascript features.",
+    "Type checking while coding not on runtime.",
+    "Less runtime errors.",
+  ];
+
   constructor() {}
 
   ngOnInit(): void {}
