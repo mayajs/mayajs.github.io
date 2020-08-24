@@ -16,6 +16,7 @@ export class GettingStartedComponent implements OnInit {
         { title: "Overview", url: "overview" },
         { title: "Installation", url: "installation" },
         { title: "Imports", url: "imports" },
+        { title: "Development", url: "development" },
       ],
     },
     {
