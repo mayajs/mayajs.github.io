@@ -20,7 +20,7 @@ export class GettingStartedComponent implements OnInit {
     },
     {
       title: "Why Mayajs?",
-      url: "why",
+      url: "why-mayajs",
       sub: [
         { title: "Easy to use", url: "easy" },
         { title: "Simplicity", url: "simplicity" },
@@ -88,5 +88,9 @@ export class GettingStartedComponent implements OnInit {
 
   navigateUrl(value: string) {
     this.router.navigate([], { fragment: value });
+  }
+
+  gotoPage(value: string) {
+    this.router.navigate([`/get-started/${value}`]);
   }
 }
