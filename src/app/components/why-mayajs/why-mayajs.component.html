@@ -47,10 +47,16 @@
   </div>
   <div class="topic">
     <h4 class="mb-3" id="users">Who uses MayaJS?</h4>
-    <p class="content">Here are the list of companies and organizations that uses our framework.</p>
+    <p class="content">Companies that uses our framework.</p>
     <div class="card-deck m-3 h-200" *ngFor="let list of getCompanyList()">
       <div class="card p-3 h-200" *ngFor="let company of list">
         <img class="img-responsive" [src]="company.src" [alt]="company.alt" />
+      </div>
+    </div>
+    <p class="content">Organizations that uses our framework.</p>
+    <div class="card-deck m-3" style="max-width: fit-content;">
+      <div class="card p-3">
+        <img class="img-responsive" src="http://cdn.ditosoft.com/assets/svelte-ph-banner.png" alt="Svelte Society PH" />
       </div>
     </div>
   </div>
