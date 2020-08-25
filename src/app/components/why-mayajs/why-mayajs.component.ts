@@ -23,7 +23,7 @@ export class WhyMayajsComponent implements OnInit {
     "Declarations for defining methods, controllers and services.",
     "Dependency injection and meta-programming.",
     "Safer codes for development and production.",
-    "Uses latest and upcomming javascript features.",
+    "Uses latest and upcoming javascript features.",
     "Type checking while coding not on runtime.",
     "Less runtime errors.",
   ];
