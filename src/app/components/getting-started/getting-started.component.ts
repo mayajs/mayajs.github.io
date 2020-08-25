@@ -41,15 +41,6 @@ export class GettingStartedComponent implements OnInit {
       ],
     },
     {
-      title: "Databases",
-      url: "databases",
-      sub: [
-        { title: "Mongodb", url: "mongo" },
-        { title: "SQL", url: "sql" },
-        { title: "Postgres", url: "postgres" },
-      ],
-    },
-    {
       title: "Methods",
       url: "methods",
       sub: [
@@ -58,6 +49,15 @@ export class GettingStartedComponent implements OnInit {
         { title: "PUT", url: "put" },
         { title: "PATCH", url: "patch" },
         { title: "DELETE", url: "delte" },
+      ],
+    },
+    {
+      title: "Databases",
+      url: "databases",
+      sub: [
+        { title: "Mongodb", url: "mongo" },
+        { title: "SQL", url: "sql" },
+        { title: "Postgres", url: "postgres" },
       ],
     },
     { title: "Routing", url: "routing" },
