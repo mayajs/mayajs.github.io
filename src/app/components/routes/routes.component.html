@@ -11,8 +11,8 @@
     <p class="content">
       A controller acts a route that has its own sub-routes which handles all the incoming request from the client. You
       can define a sub-routes using method decorators that describe what kind of request it will accepts. You can also
-      add middlewares and validations inside of these method decorators. See method decorators for more information on
-      middlewares and validation.
+      add middlewares and validations inside of these method decorators. See method section for more information on how
+      to implement middlewares and validation.
     </p>
     <p class="content">To generate a controller you can run this command on your terminal.</p>
     <p class="content code">maya generate controllers "controller-path"</p>
@@ -33,13 +33,14 @@
   <div class="topic">
     <h4 class="mb-3" id="models">Models</h4>
     <p class="content">
-      This is defines model that the controller can use. This model is a mapped for the data to be save or modified from
-      a database.
+      This will define the model that a controller can use to communicate to a database. This model is also mapped the
+      data/fields to be save or modified to a database. Our framework support both MongoDB and Sql database. See
+      database section for more informations on how to implement these databases.
     </p>
     <p class="content">To generate a model you can run this command on your terminal.</p>
-    <p class="content code">
-      maya generate model "model-path" || maya g m "model-path"
-    </p>
+    <p class="content code">maya generate model "model-path"</p>
+    <p class="content">Short hand command.</p>
+    <p class="content code">maya g m "model-path"</p>
     <p class="content">
       This will create a model file based on the model-path provided. Below shows a codeblock that generated inside the
       model.
