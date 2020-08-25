@@ -1,29 +1,26 @@
-<div class="section-routes sections" id="routes">
-  <h1 class="bg-primary mb-2">Routes</h1>
-  <p>
-    This module handles all the routes for our server. You can define a path for your controllers. You can also add
-    middlewares for your route to use. These middlewares will be executed first before your controller.
-  </p>
-  <hr />
-  <h4>COMMAND</h4>
-  <div class="bg-copyboard">
-    <b>maya generate route [name-of-route]</b>
-    <br />or<br />
-    <b>maya g r [name-of-route]</b>
+<section class="introduction mt-5">
+  <div class="topic">
+    <h4 class="mb-3" id="easy">Components</h4>
+    <div class="notice notice-danger">
+      Theses are the building block for creating a MayaJS application. You can compose these components to create
+      routes.
+    </div>
   </div>
-  <hr />
-  <h4>USAGE</h4>
-  <div class="bg-copyboard">
-    <b>maya g r sample</b>
-    <br />or<br />
-    <b>maya g r controller/sample</b>
+
+  <div class="topic">
+    <h4 class="mb-3" id="easy">Routes</h4>
+    <p class="content">
+      This module handles all the routes for our server. You can define a path for your controllers. You can also add
+      middlewares for your route to use. These middlewares will be executed first before your controller.
+    </p>
+    <p class="content"><b>COMMAND</b></p>
+    <p class="content code">
+      maya generate route "route-name" || maya g r "route-name"
+    </p>
+    <p class="content">
+      This will creates a <b>controller</b>,<b>model</b> and <b>service</b>. This will also create a folder from the
+      given route name put all the created files inside of it. Each created files will have the same naming convention
+      based on the route name.
+    </p>
   </div>
-  <hr />
-  <iframe
-    #iframe
-    type="text/javascript"
-    width="60%"
-    frameborder="0"
-    style="height: 280px; margin-left: auto; margin-right: auto; display: block;"
-  ></iframe>
-</div>
+</section>
