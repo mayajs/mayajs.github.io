@@ -12,11 +12,11 @@ export class WhyMayajsComponent implements OnInit {
   ];
 
   simpleList = [
-    "Declarative way of defining routes.",
-    "Adding route files has gotten easy using our CLI.",
-    "Business logic can be shared using services.",
-    "Create method routes using method declaration.",
-    "Not heavily relies on typescript declarations like what others framework does.",
+    "Gives declarative ways of defining routes.",
+    "Simplifies adding route files through our CLI.",
+    "Enables sharing business logic using services.",
+    "Creates routes using method declaration.",
+    "Near-independent from typescript declarations unlike most frameworks.",
   ];
 
   tsList = [
