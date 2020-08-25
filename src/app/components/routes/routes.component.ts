@@ -7,14 +7,22 @@ import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from "@angula
 })
 export class RoutesComponent implements OnInit, AfterViewInit {
   @ViewChild("controller") controllerFrame: ElementRef;
+  @ViewChild("modelMongo") mongoFrame: ElementRef;
+  @ViewChild("modelSql") sqlFrame: ElementRef;
   controllerId = "https://gist.github.com/Mackignacio/4d4efa1579130a8409879cb1ddac07f0.js";
+  modelMongoId = "https://gist.github.com/Mackignacio/2587f6b71372e2f60e447c9924706add.js";
+  modelSqlId = "https://gist.github.com/Mackignacio/065efa2426d875f2d6d0bf623bc5344e.js";
 
   constructor() {}
 
   ngOnInit(): void {}
 
   ngAfterViewInit() {
-    const codes = [{ iframe: this.controllerFrame, id: this.controllerId }];
+    const codes = [
+      { iframe: this.controllerFrame, id: this.controllerId },
+      { iframe: this.mongoFrame, id: this.modelMongoId },
+      { iframe: this.sqlFrame, id: this.modelSqlId },
+    ];
     codes.forEach(code => this.createCode(code));
   }
 
