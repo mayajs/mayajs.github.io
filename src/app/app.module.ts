@@ -11,7 +11,6 @@ import { MissionComponent } from "./components/mission/mission.component";
 import { VisionComponent } from "./components/vision/vision.component";
 import { GettingStartedComponent } from "./components/getting-started/getting-started.component";
 import { RoutesComponent } from "./components/routes/routes.component";
-import { ServicesComponent } from "./components/services/services.component";
 import { GistComponent } from "./components/gist/gist.component";
 import { WhyMayajsComponent } from "./components/why-mayajs/why-mayajs.component";
 
@@ -25,7 +24,6 @@ import { WhyMayajsComponent } from "./components/why-mayajs/why-mayajs.component
     VisionComponent,
     GettingStartedComponent,
     RoutesComponent,
-    ServicesComponent,
     GistComponent,
     WhyMayajsComponent,
   ],
