@@ -7,9 +7,8 @@ import { Component, OnInit } from "@angular/core";
 })
 export class WhyMayajsComponent implements OnInit {
   easyList = [
-    "Easy to understand even for beginners.",
-    "Can be used by developers with any skill levels.",
-    "Help in making complex routes by using built-in cli.",
+    "Beginner-friendly and accessible for any skill level.",
+    "Assists in making complex routes through built-in CLI.",
   ];
 
   simpleList = [
