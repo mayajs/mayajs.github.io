@@ -6,21 +6,43 @@
       routes.
     </div>
   </div>
-
+  <div class="topic">
+    <h4 class="mb-3" id="controllers">Controllers</h4>
+    <p class="content">
+      A controller acts a route that has its own sub-routes which handles all the incoming request from the client. You
+      can define a sub-routes using method decorators that describe what kind of request it will accepts. You can also
+      add middlewares and validations inside of these method decorators. See method decorators for more information on
+      middlewares and validation.
+    </p>
+    <p class="content">To generate a controller you can run this command in your terminal.</p>
+    <p class="content code">
+      maya generate controllers "controller-name" || maya g c "controller-name"
+    </p>
+    <p class="content">
+      This will create a controller file based on the controller-name provided. Below shows a codeblock that generated
+      inside the controller.
+    </p>
+    <iframe
+      #controller
+      type="text/javascript"
+      width="95%"
+      frameborder="0"
+      style="height: 300px; margin-left: auto; margin-right: auto; display: block;"
+    ></iframe>
+  </div>
   <div class="topic">
     <h4 class="mb-3" id="routes">Routes</h4>
     <p class="content">
       This module handles all the routes for our server. You can define a path for your controllers. You can also add
       middlewares for your route to use. These middlewares will be executed first before your controller.
     </p>
-    <p class="content"><b>COMMAND</b></p>
     <p class="content code">
       maya generate route "route-name" || maya g r "route-name"
     </p>
     <p class="content">
-      This will creates a <b>controller</b>,<b>model</b> and <b>service</b>. This will also create a folder from the
-      given route name put all the created files inside of it. Each created files will have the same naming convention
-      based on the route name.
+      This will creates a <b>controller</b>, <b>model</b> and <b>service</b>. This will also create a folder from the
+      given route-name and put all the created files inside. Each created files will have the same naming convention
+      based on the route-name.
     </p>
   </div>
   <hr />
