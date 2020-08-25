@@ -98,3 +98,10 @@ section {
 .list {
   text-indent: 3rem;
 }
+
+.card {
+  img {
+    height: 100px !important;
+    max-height: 100px !important;
+  }
+}

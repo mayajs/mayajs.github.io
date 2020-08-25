@@ -9,7 +9,7 @@
   </div>
   <div class="topic">
     <h4 class="mb-3" id="easy">Easy to use</h4>
-    <p class="content">We developed this framework with a mindset that beginners can easily adopt and use.</p>
+    <p class="content">We developed this framework with adaptability as the priority.</p>
     <ul class="list">
       <li *ngFor="let easy of easyList">{{ easy }}</li>
     </ul>
@@ -17,10 +17,10 @@
   <div class="topic">
     <h4 class="mb-3" id="simplicity">Simple yet Powerful</h4>
     <p class="content">
-      When building production quality RESTful applications and managing your routes beecomes the priority. We as
-      developer wants to make our development experience simple.
+      When building production quality RESTful applications, managing your routes becomes the priority. We as developers
+      want to simplify our workflow.
     </p>
-    <p class="content">What Mayajs can give you that can make this simple development possible:</p>
+    <p class="content">What does Mayajs do that makes this simple development possible:</p>
     <ul class="list">
       <li *ngFor="let simple of simpleList">{{ simple }}</li>
     </ul>
@@ -28,9 +28,9 @@
   <div class="topic">
     <h4 class="mb-3" id="typescript">Typescript</h4>
     <p class="content">
-      Mayajs is built with Typescript. We believe that Typescript will be the best language for us moving into the
-      future with its vast support from the community. We also love Typescript for its type checking that helps us
-      develop faster and safer.
+      Mayajs is built with Typescript. With its vast support from the community, we believe that Typescript will be the
+      best language for us moving into the future. Typescript's type checking feature also increases development
+      efficiency.
     </p>
     <p class="content">What are the benefits with using Typescript for MayaJS:</p>
     <ul class="list">
@@ -40,11 +40,25 @@
   <div class="topic">
     <h4 class="mb-3" id="inbetween">In Between</h4>
     <p class="content">
-      As you can possibly see, Mayajs is the combination of both Express and Nestjs. Like Express we utilize middlewares
-      the same way which means all of the middlewares created using express can be used inside Mayajs. For Nestjs we
-      also utilizes declarations, dependency injections and reflections. With this you can have the benefits of both
-      framework in one package.
+      As seen here, Mayajs is the combination of both Express and Nestjs. Like Express we utilize middlewares, which
+      means all middlewares created using express can be used inside Mayajs. For Nestjs we also utilize declarations,
+      dependency injections, and reflections. With this you can have the benefits of both frameworks in one package.
     </p>
+  </div>
+  <div class="topic">
+    <h4 class="mb-3" id="users">Who uses MayaJS?</h4>
+    <p class="content">Companies that uses our framework.</p>
+    <div class="card-deck m-3 h-200" *ngFor="let list of getCompanyList()">
+      <div class="card p-3 h-200" *ngFor="let company of list">
+        <img class="img-responsive" [src]="company.src" [alt]="company.alt" />
+      </div>
+    </div>
+    <p class="content">Organizations that uses our framework.</p>
+    <div class="card-deck m-3" style="max-width: fit-content;">
+      <div class="card p-3">
+        <img class="img-responsive" src="http://cdn.ditosoft.com/assets/svelte-ph-banner.png" alt="Svelte Society PH" />
+      </div>
+    </div>
   </div>
   <hr />
   <div class="row justify-content-between pr-2 mb-5">

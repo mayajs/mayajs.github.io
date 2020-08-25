@@ -27,6 +27,7 @@ export class GettingStartedComponent implements OnInit {
         { title: "Simple", url: "simplicity" },
         { title: "Typescript", url: "typescript" },
         { title: "In between", url: "inbetween" },
+        { title: "Who uses MayaJS?", url: "users" },
       ],
     },
     {
@@ -36,15 +37,7 @@ export class GettingStartedComponent implements OnInit {
         { title: "Controllers", url: "controllers" },
         { title: "Models", url: "models" },
         { title: "Service", url: "services" },
-      ],
-    },
-    {
-      title: "Databases",
-      url: "databases",
-      sub: [
-        { title: "Mongodb", url: "mongo" },
-        { title: "SQL", url: "sql" },
-        { title: "Postgres", url: "postgres" },
+        { title: "Routes", url: "routes" },
       ],
     },
     {
@@ -56,6 +49,15 @@ export class GettingStartedComponent implements OnInit {
         { title: "PUT", url: "put" },
         { title: "PATCH", url: "patch" },
         { title: "DELETE", url: "delte" },
+      ],
+    },
+    {
+      title: "Databases",
+      url: "databases",
+      sub: [
+        { title: "Mongodb", url: "mongo" },
+        { title: "SQL", url: "sql" },
+        { title: "Postgres", url: "postgres" },
       ],
     },
     { title: "Routing", url: "routing" },

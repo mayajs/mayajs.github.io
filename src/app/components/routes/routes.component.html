@@ -1,29 +1,115 @@
-<div class="section-routes sections" id="routes">
-  <h1 class="bg-primary mb-2">Routes</h1>
-  <p>
-    This module handles all the routes for our server. You can define a path for your controllers. You can also add
-    middlewares for your route to use. These middlewares will be executed first before your controller.
-  </p>
-  <hr />
-  <h4>COMMAND</h4>
-  <div class="bg-copyboard">
-    <b>maya generate route [name-of-route]</b>
-    <br />or<br />
-    <b>maya g r [name-of-route]</b>
+<section class="introduction mt-5">
+  <div class="topic">
+    <h4 class="mb-3" id="components">Components</h4>
+    <div class="notice notice-danger">
+      Components are the building blocks for creating a MayaJS application. Each component plays a vital part for your
+      application to run smoothly. Our framework uses dependency injection to provide classes in a component where it
+      needed. You can compose these components to create more robust and complex routes without sacrificing
+      maintainability of your codes.
+    </div>
+  </div>
+  <div class="topic">
+    <h4 class="mb-3" id="controllers">Controllers</h4>
+    <p class="content">
+      A controller acts a route that has its own sub-routes which handles all the incoming request from the client. You
+      can define a sub-routes using method decorators that describe what kind of request it will accepts. You can also
+      add middlewares and validations inside of these method decorators. See method section for more information on how
+      to implement middlewares and validation.
+    </p>
+    <p class="content">To generate a controller you can run this command on your terminal.</p>
+    <p class="content code">maya generate controllers "controller-path"</p>
+    <p class="content">Short hand command.</p>
+    <p class="content code">maya g c "controller-path"</p>
+    <p class="content">This command will create a controller file based on the controller-path provided.</p>
+    <p class="content">Below shows a codeblock generated inside the controller file.</p>
+    <iframe
+      #controller
+      type="text/javascript"
+      width="95%"
+      frameborder="0"
+      style="height: 300px; margin-left: auto; margin-right: auto; display: block;"
+    ></iframe>
+  </div>
+  <div class="topic">
+    <h4 class="mb-3" id="models">Models</h4>
+    <p class="content">
+      This will define the model that a controller can use to communicate to a database. This model is also mapped the
+      data/fields to be save or modified to a database. Our framework support both MongoDB and Sql database. See
+      database section for more informations on how to implement these databases.
+    </p>
+    <p class="content">To generate a model you can run this command on your terminal.</p>
+    <p class="content code">maya generate model "model-path"</p>
+    <p class="content">Short hand command.</p>
+    <p class="content code">maya g m "model-path"</p>
+    <p class="content">This command will create a model file based on the model-path provided.</p>
+    <p class="content">Below shows a codeblock generated inside the model file.</p>
+    <p class="content">
+      <b>Model for MongoDB Databases</b>
+    </p>
+    <iframe
+      #modelMongo
+      type="text/javascript"
+      width="95%"
+      frameborder="0"
+      style="height: 240px; margin-left: auto; margin-right: auto; display: block;"
+    ></iframe>
+    <p class="content">
+      <b>Model for Sql Databases</b>
+    </p>
+    <iframe
+      #modelSql
+      type="text/javascript"
+      width="95%"
+      frameborder="0"
+      style="height: 220px; margin-left: auto; margin-right: auto; display: block;"
+    ></iframe>
+  </div>
+  <div class="topic">
+    <h4 class="mb-3" id="services">Services</h4>
+    <p class="content">
+      Services can make your code shareable accross your application. A service can be injected inside of a controller
+      or another service inside a class constructor. You can seperate your business logic inside your routes using a
+      service and share it across different services.
+    </p>
+    <p class="content">To generate a service you can run this command on your terminal.</p>
+    <p class="content code">maya generate services "service-path"</p>
+    <p class="content">Short hand command.</p>
+    <p class="content code">maya g s "service-path"</p>
+    <p class="content">This command will create a service file based on the service-path provided.</p>
+    <p class="content">Below shows a codeblock generated inside the service file.</p>
+    <iframe
+      #services
+      type="text/javascript"
+      width="95%"
+      frameborder="0"
+      style="height: 200px; margin-left: auto; margin-right: auto; display: block;"
+    ></iframe>
+  </div>
+  <div class="topic">
+    <h4 class="mb-3" id="routes">Routes</h4>
+    <p class="content">
+      Adding and creating controllers, models and services separately can be tiring task if you do it repeatedly. We
+      created this command to help users generate these 3 files and put them on one folder.
+    </p>
+    <p class="content">To generate a route you can run this command on your terminal.</p>
+    <p class="content code">maya generate route "route-name"</p>
+    <p class="content">Short hand command.</p>
+    <p class="content code">maya g r "route-name"</p>
+    <p class="content">
+      This will creates a <b>controller</b>, <b>model</b> and <b>service</b>. This will also create a folder from the
+      given route-name and put all the created files inside. Each created files will have the same naming convention
+      based on the route-name.
+    </p>
   </div>
   <hr />
-  <h4>USAGE</h4>
-  <div class="bg-copyboard">
-    <b>maya g r sample</b>
-    <br />or<br />
-    <b>maya g r controller/sample</b>
+  <div class="row justify-content-between pr-2 mb-5">
+    <div class="col-md-2 text-left previous">
+      <p class="m-0"><b>< PREVIOUS</b></p>
+      <h4 class="text-left"><a routerLink="/get-started/why-mayajs">Why Mayajs?</a></h4>
+    </div>
+    <div class="col-md-2 text-right next">
+      <p class="m-0"><b>NEXT ></b></p>
+      <h4 class="text-right"><a routerLink="/get-started/methods">Methods</a></h4>
+    </div>
   </div>
-  <hr />
-  <iframe
-    #iframe
-    type="text/javascript"
-    width="60%"
-    frameborder="0"
-    style="height: 280px; margin-left: auto; margin-right: auto; display: block;"
-  ></iframe>
-</div>
+</section>
