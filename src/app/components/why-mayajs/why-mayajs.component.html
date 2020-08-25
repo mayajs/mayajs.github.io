@@ -45,6 +45,15 @@
       dependency injections, and reflections. With this you can have the benefits of both frameworks in one package.
     </p>
   </div>
+  <div class="topic">
+    <h4 class="mb-3" id="inbetween">Who uses MayaJS?</h4>
+    <p class="content">Here are the list of companies and organizations that uses our framework.</p>
+    <div class="card-deck m-3 h-200" *ngFor="let list of getCompanyList()">
+      <div class="card p-3 h-200" *ngFor="let company of list">
+        <img class="img-responsive" [src]="company.src" [alt]="company.alt" />
+      </div>
+    </div>
+  </div>
   <hr />
   <div class="row justify-content-between pr-2 mb-5">
     <div class="col-md-2 text-left previous">
