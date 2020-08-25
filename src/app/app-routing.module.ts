@@ -15,7 +15,7 @@ const routes: Routes = [
     children: [
       { path: "introduction", component: IntroductionComponent },
       { path: "why-mayajs", component: WhyMayajsComponent },
-      { path: "route", component: RoutesComponent },
+      { path: "components", component: RoutesComponent },
       { path: "", redirectTo: "introduction", pathMatch: "full" },
       { path: "**", redirectTo: "introduction", pathMatch: "full" },
     ],
