@@ -14,12 +14,12 @@
       add middlewares and validations inside of these method decorators. See method decorators for more information on
       middlewares and validation.
     </p>
-    <p class="content">To generate a controller you can run this command in your terminal.</p>
+    <p class="content">To generate a controller you can run this command on your terminal.</p>
     <p class="content code">
-      maya generate controllers "controller-name" || maya g c "controller-name"
+      maya generate controllers "controller-path" || maya g c "controller-path"
     </p>
     <p class="content">
-      This will create a controller file based on the controller-name provided. Below shows a codeblock that generated
+      This will create a controller file based on the controller-path provided. Below shows a codeblock that generated
       inside the controller.
     </p>
     <iframe
@@ -28,6 +28,41 @@
       width="95%"
       frameborder="0"
       style="height: 300px; margin-left: auto; margin-right: auto; display: block;"
+    ></iframe>
+  </div>
+  <div class="topic">
+    <h4 class="mb-3" id="models">Models</h4>
+    <p class="content">
+      This is defines model that the controller can use. This model is a mapped for the data to be save or modified from
+      a database.
+    </p>
+    <p class="content">To generate a model you can run this command on your terminal.</p>
+    <p class="content code">
+      maya generate model "model-path" || maya g m "model-path"
+    </p>
+    <p class="content">
+      This will create a model file based on the model-path provided. Below shows a codeblock that generated inside the
+      model.
+    </p>
+    <p class="content">
+      <b>Model for MongoDB Databases</b>
+    </p>
+    <iframe
+      #modelMongo
+      type="text/javascript"
+      width="95%"
+      frameborder="0"
+      style="height: 240px; margin-left: auto; margin-right: auto; display: block;"
+    ></iframe>
+    <p class="content">
+      <b>Model for Sql Databases</b>
+    </p>
+    <iframe
+      #modelSql
+      type="text/javascript"
+      width="95%"
+      frameborder="0"
+      style="height: 240px; margin-left: auto; margin-right: auto; display: block;"
     ></iframe>
   </div>
   <div class="topic">
