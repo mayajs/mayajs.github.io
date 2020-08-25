@@ -37,6 +37,7 @@ export class GettingStartedComponent implements OnInit {
         { title: "Controllers", url: "controllers" },
         { title: "Models", url: "models" },
         { title: "Service", url: "services" },
+        { title: "Routes", url: "routes" },
       ],
     },
     {
