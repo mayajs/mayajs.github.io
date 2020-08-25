@@ -27,6 +27,7 @@ export class GettingStartedComponent implements OnInit {
         { title: "Simple", url: "simplicity" },
         { title: "Typescript", url: "typescript" },
         { title: "In between", url: "inbetween" },
+        { title: "Who uses MayaJS?", url: "users" },
       ],
     },
     {
