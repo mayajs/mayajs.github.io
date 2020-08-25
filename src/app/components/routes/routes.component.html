@@ -87,12 +87,13 @@
   <div class="topic">
     <h4 class="mb-3" id="routes">Routes</h4>
     <p class="content">
-      This module handles all the routes for our server. You can define a path for your controllers. You can also add
-      middlewares for your route to use. These middlewares will be executed first before your controller.
+      Adding and creating controllers, models and services separately can be tiring task if you do it repeatedly. We
+      created this command to help users generate these 3 files and put them on one folder.
     </p>
-    <p class="content code">
-      maya generate route "route-name" || maya g r "route-name"
-    </p>
+    <p class="content">To generate a route you can run this command on your terminal.</p>
+    <p class="content code">maya generate route "route-name"</p>
+    <p class="content">Short hand command.</p>
+    <p class="content code">maya g r "route-name"</p>
     <p class="content">
       This will creates a <b>controller</b>, <b>model</b> and <b>service</b>. This will also create a folder from the
       given route-name and put all the created files inside. Each created files will have the same naming convention
