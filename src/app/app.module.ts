@@ -13,6 +13,7 @@ import { GettingStartedComponent } from "./components/getting-started/getting-st
 import { RoutesComponent } from "./components/routes/routes.component";
 import { GistComponent } from "./components/gist/gist.component";
 import { WhyMayajsComponent } from "./components/why-mayajs/why-mayajs.component";
+import { MethodsComponent } from './components/methods/methods.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { WhyMayajsComponent } from "./components/why-mayajs/why-mayajs.component
     RoutesComponent,
     GistComponent,
     WhyMayajsComponent,
+    MethodsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
