@@ -14,6 +14,11 @@ import { RoutesComponent } from "./components/routes/routes.component";
 import { GistComponent } from "./components/gist/gist.component";
 import { WhyMayajsComponent } from "./components/why-mayajs/why-mayajs.component";
 import { MethodsComponent } from './components/methods/methods.component';
+import { DatabasesComponent } from './components/databases/databases.component';
+import { ValidationComponent } from './components/validation/validation.component';
+import { RouterComponent } from './components/router/router.component';
+import { MiddlewareComponent } from './components/middleware/middleware.component';
+import { HighlightJsModule } from 'ngx-highlight-js';
 
 @NgModule({
   declarations: [
@@ -28,8 +33,12 @@ import { MethodsComponent } from './components/methods/methods.component';
     GistComponent,
     WhyMayajsComponent,
     MethodsComponent,
+    DatabasesComponent,
+    ValidationComponent,
+    RouterComponent,
+    MiddlewareComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HighlightJsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
