@@ -1,0 +1,457 @@
+<section class="introduction mt-5">
+    <div class="topic">
+      <h4 class="mb-3" id="routing">Router</h4>
+      <p class="notice notice-danger">We know that this is another Express JS like project. 
+        We develop <a href="https://github.com/mayajs/router" target="_blank">@mayajs/router</a> not to compete but to have our own router for our other projects like @mayajs/core. 
+        As much as possible we don't want to rely on other framework/library to create our own projects. 
+        This is just for maintainability and ease of transition for future updates.</p>
+    </div>
+    <div class="topic">
+      <p class="content">
+        Installation via command-line
+      </p>
+      <p class="content code">
+        npm i @mayajs/router
+      </p>
+    </div>
+    <div class="topic">
+      <h4 class="mb-3" id="quick-start">Quick start</h4>
+      <p class="content">
+        The easiest way to get started is to create a simple route
+      </p>
+      
+      <p class="content code">
+        <span *ngFor="let item of firstRow">
+        <span class="{{ item.style }}">{{ item.name }}</span>
+        {{ item.spacing ? ' ' : ' ' }}
+        </span> 
+        <br /><span *ngFor="let item of secondRow">
+          <span class="{{ item.style }}">{{ item.name }}</span>
+          {{ item.spacing ? ' ' : ' ' }}
+        </span><br />
+        <br /><span *ngFor="let item of thirdRow">
+          <span class="{{ item.style }}">{{ item.name }}</span>
+          {{ item.spacing ? ' ' : ' ' }}
+        </span><br />
+        <span *ngFor="let item of fourthRow">
+          <span class="{{ item.style }}">{{ item.name }}</span>
+          {{ item.spacing ? ' ' : ' ' }}
+        </span><br />
+        <br /><span *ngFor="let item of fifthRow">
+          <span class="{{ item.style }}">{{ item.name }}</span>
+          {{ item.spacing ? ' ' : ' ' }}
+        </span><br />
+          <span class="tab-1">{{ '{' }}</span>
+          <span class="tab-2">
+            <span *ngFor="let item of sixthRow">
+              <span class="{{ item.style }}">{{ item.name }}</span>
+              {{ item.spacing ? ' ' : ' ' }}
+            </span><br />
+            <span *ngFor="let item of seventhRow">
+              <span class="{{ item.style }}">{{ item.name }}</span>
+              {{ item.spacing ? ' ' : ' ' }}
+            </span><br />
+          </span>
+            <span class="tab-1">{{ '}' }},</span>
+          <span>]);<br /></span>
+          <br /><span *ngFor="let item of eightRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+          </span><br />
+        </p>
+    </div>
+    <div class="topic">
+      <h4 class="mb-3" id="route">Route</h4>
+      <p class="content">Defining routes in MayaJs is like creating a JSON object.</p>
+      <p class="content code">
+        <span *ngFor="let item of ninthRow">
+          <span class="{{ item.style }}">{{ item.name }}</span>
+          {{ item.spacing ? ' ' : ' ' }}
+        </span><br />
+        <span class="tab">
+          <span *ngFor="let item of tenthRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+          </span><br />
+          <span *ngFor="let item of eleventhRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+          </span><br />
+            <span class="tab">//  ... </span>
+            {{ '}' }},
+          <br /><span *ngFor="let item of twelveRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+            </span><br />
+            <span class="tab">//  ... </span>
+            {{ '}' }},
+          <br /><span *ngFor="let item of thirteenRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+            </span><br />
+            <span class="tab">//  ... </span>
+            {{ '}' }},
+          <br /><span *ngFor="let item of fourteenRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+            </span><br />
+            <span class="tab">//  ... </span>
+            {{ '}' }},
+          <br /><span *ngFor="let item of fifteenRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+            </span><br />
+            <span class="tab">//  ... </span>
+            {{ '}' }},
+          <br /><span *ngFor="let item of sixteenRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+            </span><br />
+            <span class="tab">//  ... </span>
+            {{ '}' }},
+          </span> 
+          {{ '}' }};
+      </p>
+      <p class="content">As seen above each method name has a callback function. 
+        Mayajs will set the correct content-type based on what the method callback will return.</p>
+      <p class="content code">
+        <span *ngFor="let item of seventeenRow">
+          <span class="{{ item.style }}">{{ item.name }}</span>
+          {{ item.spacing ? ' ' : ' ' }}
+        </span><br />
+        <span class="tab">
+          <span *ngFor="let item of eighteenRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+          </span><br />
+        </span>
+        <span class="tab">
+          <span *ngFor="let item of nineteenRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+          </span><br />
+        </span>
+        <span class="tab-1">
+          <span *ngFor="let item of twentyRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+          </span><br />
+          <span *ngFor="let item of twentyOneRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+          </span><br />
+        </span>
+        <span class="tab">{{ '}' }},</span>
+        <span class="tab">
+          <span *ngFor="let item of twentytwoRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+          </span><br />
+        </span>
+        <span class="tab-1">
+          <span *ngFor="let item of twentythreeRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+          </span><br />
+        </span>
+        <span class="tab">{{ '}' }},</span>
+        <span class="tab">
+          <span *ngFor="let item of twentyfourRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+          </span><br />
+        </span>
+        <span class="tab-1">
+          <span *ngFor="let item of twentyfiveRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+          </span><br />
+        </span>
+        <span class="tab">{{ '}' }},</span>
+        <span class="tab">
+          <span *ngFor="let item of twentysixRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+          </span><br />
+        </span>
+        <span class="tab-1">
+          <span *ngFor="let item of twentysevenRow">
+            <span class="{{ item.style }}">{{ item.name }}</span>
+            {{ item.spacing ? ' ' : ' ' }}
+          </span><br />
+        </span>
+          <span class="tab">{{ '}' }},</span>
+          {{ '}' }};
+      </p>
+      <p class="content">Incase you need to use a middleware for an specific route 
+        method you need to create a route object instead.</p>
+      <P class="content code">
+        const route = {{ '{' }}
+        <span class="tab">path: "user",</span>
+        <span class="tab">GET: () => {{ '{' }} </span>
+        <span class="tab-1">middlewares: [middleware],</span>
+        <span class="tab-1">callback: () => {{ '{' }}</span>
+        <span class="tab-2">// ...</span>
+        <span class="tab-1">{{ '}' }},</span>
+        <span class="tab">{{ '}' }},</span>
+        {{ '}' }}; 
+      </P>
+    </div>
+    <div class="topic">
+      <h4 class="mb-3" id="params">Params</h4>
+      <p class="content">MayaJs passes a context object on each route method. 
+        You can acces the route params by destructuring the context object on the callback method.</p>
+      <p class="content code">
+        const route = {{ '{' }}
+        <span class="tab">path: "user/:id",</span>
+        <span class="tab">GET: ({{ '{' }} params {{ '}' }}) => {{ '{' }}</span>
+        <span class="tab-1">// `params` object contains the value of `id` define on the path above e.g. `user/hello`</span>
+        <span class="tab-1">return params.id; // This has a value of "hello"</span>
+        <span class="tab">{{ '}' }},</span>
+        {{ '}' }};
+      </p>
+    </div>
+    <div class="topic">
+      <h4 class="mb-3" id="query-string">Query string</h4>
+      <p class="content">You can also access the query string using the context object provided 
+        by MayaJs on your route method callback function.</p>
+      <p class="content code">
+        const route = {{ '{' }}
+        <span class="tab">path: "user",</span>
+        <span class="tab">GET: ({{ '{' }} query {{ '}' }}) => {{ '{' }}</span>
+        <span class="tab-1">// `query` object contains all the value on your query string e.g. `user?id=1`</span>
+        <span class="tab-1">return query.id; // This has a value of 1</span>
+        <span class="tab">{{ '}' }},</span>
+        {{ '}' }};
+      </p>
+    </div>
+    <div class="topic">
+      <h4 class="mb-3" id="body">Body</h4>
+      <p class="content">Request body is also accessible in the context but you need a middleware before you can actually uses. 
+        There is a popular middleware called <a href="https://www.npmjs.com/package/body-parser" target="_blank">body-parser</a> 
+        that we can use to achieve this.
+      </p>
+      <p class="content code">
+        import maya from "@mayajs/router";<br />
+        // Third party middleware you need to install<br />
+        import bodyParser from "body-parser";<br />
+        <span><br />const app = maya();<br /></span>
+        <span><br />// Initialize body parser for mayajs to use it internally<br />
+          app.use(bodyParser.json());<br />
+          app.use(bodyParser.urlencoded({{ '{' }} extended: false {{ '}' }}));<br /></span>
+        <span><br />const route = {{ '{' }}</span>
+        <span class="tab">path: "user",</span>
+        <span class="tab">POST: ({{ '{' }} body {{ '}' }}) => {{ '{' }}</span>
+        <span class="tab-1">// `body` object contains all the value from the request body</span>
+        <span class="tab-1">return body; // This has a value of req.body</span>
+        <span class="tab">{{ '}' }},</span>
+          };
+      </p>
+    </div>
+    <div class="topic">
+      <h4 class="mb-3" id="middleware">Middlewares</h4>
+      <p class="content">As seen above how we used third party middlewares to parse the request body.
+         We can also create our own middlewares. Although MayaJs supports all 
+         <a href="https://expressjs.com/en/resources/middleware.html" target="_blank">
+          ExpressJs Middlewares,</a>we also can create a MayaJsMiddleware of our own. 
+        The context is where you can access params, query and body objects.</p>
+        <p class="content code">
+          router.use((context, next, error) => {{ '{' }}
+          <span class="tab">// This `error` variable comes from the previous middleware <br /> console.log(error);</span>
+          <span class="tab">
+            <br />// The `next` function will trigger the end of this callback function
+            <br />// and execute the next middleware in the list
+            <br />next("Error message or any value that you want to pass to the next middleware");
+          </span>
+          {{ '}' }});
+        </p>
+    </div>
+    <div class="topic">
+      <h4 class="mb-3" id="child-route">Child routes</h4>
+      <p class="content">A child route is a route that appended to its parent route. 
+        It can be added using the children property from the route object.
+      </p>
+      <p class="content code">
+        const child = {{ '{' }}<br />
+        <span class="tab">
+          path: "child", <br/>
+          GET: () => "This is from a child route", // You can call this route by `users/child`
+        </span>
+        {{ '}' }};
+        <br />const child = {{ '{' }}<br />
+        <span class="tab">
+          path: "user", <br/>
+          children: [child], // This is a list of routes.
+        </span>
+        {{ '}' }};
+        <br />app.add([parent]);
+      </p>
+    </div>
+    <div class="topic">
+      <h4 class="mb-3" id="child-route">Controller</h4>
+      <p class="content">A controller is a class that act as a replacement for the route method objects. 
+        It can be used to make your code more modular and manageable when your code base get bigger.
+      </p>
+      <p class="content code">
+        class UsersController extends Controller {{ '{' }}
+          <span class="tab">GET() {{ '{' }}</span>
+          <span class="tab-1">return "Hello form UsersController";</span>
+          <span class="tab">{{ '}' }}</span>
+          <span class="tab"><br />// You can also add additional route method like this</span>
+          <span class="tab">POST() {{ '{' }}</span>
+          <span class="tab-1">// ...</span>
+          <span class="tab">{{ '}' }}</span>
+          <span class="tab"><br />// Other routes available are PUT, PATCH, DELETE and OPTIONS</span> 
+          <span>{{ '}' }}</span>
+          app.add([
+          <span class="tab">{{ '{' }}</span>
+          <span class="tab-1">path: "user",<br />
+          controller: UsersController,
+          </span>
+          <span class="tab">{{ '}' }},</span>
+        ]);
+      </p>
+      <p class="content">If you want to add middleware a middleware to a specific method 
+        you can add the middleware property in a controller.
+      </p>
+      <p class="content code">
+        class UsersController extends Controller {{ '{' }}
+        <span class="tab">middleware = {{ '{' }}</span>
+        <span class="tab-1">GET: [middleware], // This middleware will be added to the `GET` method below</span>
+        <span class="tab">{{ '}' }};</span>
+        <span class="tab"><br />GET() {{ '{' }}</span>
+        <span class="tab-1">//  ...</span>
+        <span class="tab">{{ '{' }}</span>
+        {{ '}' }}
+      </p>
+      <p class="notice notice-danger">NOTE: A controller has no `children` property</p>
+    </div>
+    <div class="topic">
+      <h4 class="md-3" id="services">Services</h4>
+      <p class="content">A service is an injectable class that can be used inside of a controller or another service.</p>
+      <p class="content code">
+        export class UsersServices extends Services {{ '{' }}
+        <span class="tab">
+          // Every function inside the service can be accessed by the class its injected
+          <br />// All public properties are also accessible
+          <br />// A service is instatiated once and making it a singleton
+        </span>
+        <span class="tab">add() {{ '{' }}</span>
+        <span class="tab-1">// ...</span>
+        <span class="tab">{{ '}' }}</span>
+      {{ '}' }}
+        <span><br />class UsersController extends Controller {{ '{' }}</span>
+        <span class="tab">constructor(userServices: UsersServices) {{ '{' }}</span>
+        <span class="tab-1">super();</span>
+        <span class="tab">{{ '}' }}<br /></span>
+        <span class="tab"><br />addUser() {{ '{' }}</span>
+        <span class="tab-1">
+          // This `add` function coming from the `UsersService`.
+          <br />// It is accessible on this controller via dependency injection.
+          <br />// MayaJs automatically instantiated it and created it singleton instance.
+          <br />this.userServices.add();
+        </span>
+        <span class="tab">{{ '}' }}</span>
+        {{ '}' }}
+      </p>
+      <p class="notice notice-danger">NOTE: A `child` route can also have its own `children`.</p>
+    </div>
+    <div class="topic">
+      <h4 class="mb-3" id="module">Module</h4>
+      <p class="content">A module is a like a container of routes, controller and services that act on its own. 
+        This will allow your code to modular and shareable accross all routes.
+      </p>
+      <p class="content code">
+        class UsersModule extends MayaJsModule {{ '{' }}
+        <span class="tab">
+          // List of `module` or `services` that this module will use for its controllers <br />
+          imports = [];<br />
+          // List of controllers that this module will use<br />
+          declarations = [];<br />
+          // List of services that can be use inside this module<br />
+          providers = [];<br />
+          // List of services that this module will exports that can be used by other modules<br />
+          exports = [];<br />
+          // List of dependencies that will be injected to this module<br />
+          dependencies = [];
+        </span>
+        {{ '}' }}
+      </p>
+      <p class="content">As you can see when we create a module we dont have any way to add routes on it.
+         Below is an example of implementation of how to add a RouterModule for this module to add routes.
+      </p>
+      <p class="content code">
+        import {{ '{' }} UsersController, UsersIdController {{ '}' }} from "./controller";<br/>
+        import {{ '{' }} RouterModule {{ '}' }} from "@mayajs/router";<br/>
+        import {{ '{' }} UsersServices {{ '}' }} from "./services";<br />
+        <br /> // Define the routes<br />
+        const routes = [
+        <span class="tab">{{ '{' }}</span>
+        <span class="tab-1">
+          path: "/",<br />
+          controller: UsersController,
+        </span>
+        <span class="tab">{{ '}' }}</span>
+        <span class="tab">{{ '{' }}</span>
+        <span class="tab-1">
+          path: ":id",<br />
+          controller: UsersIdController,
+        </span>
+        <span class="tab">{{ '}' }}</span>
+        ];<br />
+        <br />export class UsersModule extends MayaJsModule {{ '{' }}
+        <span class="tab">
+          // User `RouterModule.forRoot` to inject the routes<br/>
+          imports = [RouterModule.forRoot(routes)];<br/>
+          // Declare the controllers that will be used inside the routes<br />
+          declarations = [UsersIdController, UsersController];
+        </span>
+        {{ '}' }}
+      </p>
+    </div>
+    <div class="topic">
+      <h4 class="mb-3" id="custom-module">Custom module</h4>
+      <p class="content">Unlike the common mayajs module, custom modules provide other functionality aside from managing your controllers. 
+        One example of this the RouterModule that is reponsible for adding routes to your module. 
+        A key concept of a custom module is it has an invoke and forRoot function that provides additional functionalities.
+      </p>
+      <p class="content code">
+        export class UsersModule extends CustomModule {{ '{' }}
+        <span class="tab">invoke() {{ '{' }}</span>
+        <span class="tab-1">
+          <br />// This function will run after an instance of this module is created
+          <br />// But the providers will stay singleton on each instance
+        </span>
+        <span class="tab">{{ '}' }}</span>
+        <span class="tab"><br />static forRoot(options: any) {{ '{' }}</span>
+        <span class="tab-1">return {{ '{' }}</span>
+        <span class="tab-2">
+          module: UsersModule, // Returns the current module reference<br/>
+          providers: [], // List of providers that this module will use on its controllers
+        </span>
+        <span class="tab-1">{{ '}' }};</span>
+        <span class="tab">{{ '}' }}</span>
+        {{ '}' }}
+      </p>
+      <p class="content">
+        Now we know how to create a module but how we can call it on our routes. 
+        We are now introducing to loadChildren property of our route object. 
+        MayaJs will automatically resolve the module asynchronously when the path is added on the route list.
+      </p>
+      <p class="content code">
+        import maya from "@mayajs/router";<br />
+        import http from "http";<br />
+        <span><br />const app = maya();<br /></span>
+        <span><br />app.add([</span>
+        <span class="tab">{{ '{' }}</span>
+        <span class="tab-1">
+          path: "users",<br />
+          // We are using dynamic importing so we don't need it to manually import the module in the file<br />
+          // MayaJs will resolve the module asynchronously<br />
+          loadChildren: () => import("./users.module").then((m) => m.UsersModule),
+        </span>
+        <span class="tab">{{ '}' }},</span>
+        ]);
+      </p>
+    </div>
+</section>
