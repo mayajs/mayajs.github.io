@@ -79,13 +79,13 @@
 
       exports = ___CSS_LOADER_API_IMPORT___(true); // Module
 
-      exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\nbody,\nhtml {\n  font-family: \"Rubik\", sans-serif;\n  text-align: center;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n}\nbody::-webkit-scrollbar {\n  background-color: #ffc1c1;\n  width: 0.5em;\n}\nbody::-webkit-scrollbar-track {\n  box-shadow: inset 0 0 6px rgba(129, 129, 129, 0.3);\n}\nbody::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  background-color: #ff7b7b;\n  outline: 1px solid slategrey;\n}", "", {
+      exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\nbody,\nhtml {\n  font-family: \"Rubik\", sans-serif;\n  text-align: center;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n}\nbody::-webkit-scrollbar {\n  background-color: #ffc1c1;\n  width: 0.5em;\n}\nbody::-webkit-scrollbar-track {\n  box-shadow: inset 0 0 6px rgba(129, 129, 129, 0.3);\n}\nbody::-webkit-scrollbar-thumb {\n  border-radius: 10px;\n  background-color: #ff7b7b;\n  outline: 1px solid slategrey;\n}\n.textarea {\n  background: #d6d6d64d !important;\n}", "", {
         "version": 3,
         "sources": ["styles.scss"],
         "names": [],
-        "mappings": "AAAA,8EAAA;AACA;;EAEE,gCAAA;EACA,kBAAA;EACA,YAAA;EACA,SAAA;EACA,UAAA;AACF;AAEA;EACE,yBAAA;EACA,YAAA;AACF;AAEA;EACE,kDAAA;AACF;AAEA;EACE,mBAAA;EACA,yBAAA;EACA,4BAAA;AACF",
+        "mappings": "AAAA,8EAAA;AACA;;EAEE,gCAAA;EACA,kBAAA;EACA,YAAA;EACA,SAAA;EACA,UAAA;AACF;AAEA;EACE,yBAAA;EACA,YAAA;AACF;AAEA;EACE,kDAAA;AACF;AAEA;EACE,mBAAA;EACA,yBAAA;EACA,4BAAA;AACF;AACA;EACE,gCAAA;AAEF",
         "file": "styles.scss",
-        "sourcesContent": ["/* You can add global styles to this file, and also import other style files */\r\nbody,\r\nhtml {\r\n  font-family: 'Rubik', sans-serif;\r\n  text-align: center;\r\n  height: 100%;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\nbody::-webkit-scrollbar {\r\n  background-color: #ffc1c1;\r\n  width: .5em;\r\n}\r\n\r\nbody::-webkit-scrollbar-track {\r\n  box-shadow: inset 0 0 6px rgba(129, 129, 129, 0.3);\r\n}\r\n\r\nbody::-webkit-scrollbar-thumb {\r\n  border-radius: 10px;\r\n  background-color: #ff7b7b;\r\n  outline: 1px solid slategrey;\r\n}\r\n"]
+        "sourcesContent": ["/* You can add global styles to this file, and also import other style files */\r\nbody,\r\nhtml {\r\n  font-family: 'Rubik', sans-serif;\r\n  text-align: center;\r\n  height: 100%;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n\r\nbody::-webkit-scrollbar {\r\n  background-color: #ffc1c1;\r\n  width: .5em;\r\n}\r\n\r\nbody::-webkit-scrollbar-track {\r\n  box-shadow: inset 0 0 6px rgba(129, 129, 129, 0.3);\r\n}\r\n\r\nbody::-webkit-scrollbar-thumb {\r\n  border-radius: 10px;\r\n  background-color: #ff7b7b;\r\n  outline: 1px solid slategrey;\r\n}\r\n.textarea {\r\n  background: #d6d6d64d !important;\r\n}\r\n\r\n"]
       }]); // Exports
 
       module.exports = exports;
