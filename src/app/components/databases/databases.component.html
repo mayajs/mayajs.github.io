@@ -1,0 +1,138 @@
+<section class="introduction mt-5">
+    <div class="topic">
+      <h4 class="mb-3" id="components">Databases</h4>
+    </div>
+    <!-- mongoDB -->
+    <div class="topic">
+        <h4 class="mb-3" id="mongo">MongoDB</h4>
+        <p class="content">Description</p>
+        <p class="content">This is a MayaJS library that deals with Mongodb drivers. 
+            It uses mongoose to connect to any mongodb database. 
+            It also use mongoose Schema and Model for its model creation.</p>
+        <p class="content">Models</p>
+        <p class="notice notice-danger">Creates a model intance based on the name passed on the parameter.</p>
+        <p class="content">MayaJS collect and store all the models defined on the @Controller decorators to a single object. 
+            Everytime the @Models decorator is attached to a variable it replace its value with a model instance. 
+            This model instance is based on <a href="https://mongoosejs.com/docs/api/model.html" target="_blank" >mongoose model</a>. 
+            All of mongoose functionality is available for this model instance.
+        </p>
+        <p class="content">Pseudo Code</p>
+        <p class="content code">
+            @Models(model_name:string) varaiable_name;
+        </p>
+        <p class="content">Sample Code</p>
+        <p class="content code">
+            @Models("sample") model;
+        </p>
+        <p class="content">Modules</p>
+        <p class="notice notice-danger">
+            A wrapper for mongoose that MayaJS use to connect to MongoDB.
+        </p>
+        <p class="content">
+            Mongo accepts an object settings that will set the connection for MongoDB. 
+            MayaJS will automatically connect to the specified settings whenever the server starts. 
+            It will also set the models using the models function. 
+            It typically used inside the @App decorator on the options paramater.
+        </p>
+        <p class="content">Options</p>
+        <p class="content code">
+            {{ '{' }}
+            <br />
+            <span class="tab">connectionString: string; // Connection string </span>
+            <span class="tab">options?: ConnectionOptions; // Mongoose connect options OPTIONAL </span>
+            <span class="tab">schemas?: SchemaObject; // Mongoose schema object OPTIONAL </span>
+           
+            
+            {{ '}' }}
+        </p>
+        <p class="notice notice-danger">NOTE: See full documentation of 
+            <a href="https://mongoosejs.com/docs/connections.html#options" target="_blank">
+            ConnectionOptions here</a>.</p>
+        <p class="content">Sample Code</p>
+        <p class="content code">
+            @App({{ '{' }}
+            <br />
+            <span class="tab">database: Mongo({{ '{' }} </span>
+            <span class="tab-1">connectionString: "your-connection-string-here", </span>
+            <span class="tab-1">options: {{ '{}' }}, // Define Mongodb options </span>
+            <span class="tab-1">schemas: [], // Add mongoose schema here </span>
+            <span class="tab"> {{ '}' }}),</span>
+            {{ '}' }}) <br />
+            export class AppModule {{ '{}' }}
+        </p>
+    </div>
+    <!-- sql -->
+    <div class="topic">
+        <h4 class="mb-3" id="sql">SQL</h4>
+        <p class="content">
+            This will creates a MySql Database that will be consume on AppModule class. 
+            It accepts an object of settings for mysql connection. 
+            This database will be consume by Mayajs in compilation and automatically connects 
+            the database when the start function is called.
+        </p>
+        <p class="content">Import</p>
+        <p class="content code">import {{ '{' }} Sql {{ '}' }} from "@mayajs/sql";</p>
+        <p class="content">Implementation</p>
+        <p class="content code">Sql ({{ '{' }} 
+            <span class="tab">
+            name: "database-name" 
+            <span class ="tab-1">options: {{ '{' }} </span>
+            <span class ="tab-1">database: "sql-database", </span>
+            <span class ="tab-1">username: "sql-username",</span>
+            <span class ="tab-1">password: "sql-password",</span>
+            <span class ="tab-1">options: {{ '{' }} </span>
+            <span class="tab-2">host: "localhost",</span>
+            <span class="tab-2">dialect: "mysql" /* one of 'mariadb' | 'postgres' | 'mssql' */, </span>
+            <span class="tab-1 ">{{ '}' }}, </span>
+            <span class="tab">{{ '}' }}, </span>
+            <span class="tab">schemas: [</span>
+            <span class="tab-1">sample, // Sequelize Schema here </span>
+            <span class="tab">],</span>
+            <span class="">{{ '}' }});</span>
+            </span>
+        </p>
+        <p class="content">Adding Sql on App Decorator</p>
+        <p class="content code">import Sql from "./databases/sql"; <br />
+            <span class="next">@App({{ '{' }}</span>
+            <span class="tab">databases: [Sql],</span>
+            <span>{{ '}' }}) <br />export class AppModule {{ '{}' }}</span>
+        </p>
+    </div>
+    <!-- schema -->
+    <div class="topic">
+        <h4 class="mb-3" id="sql">Schema</h4>
+        <p class="content">
+            An interface for table fields. 
+            Can be used when creating tables for type checking. 
+            Every Schema is an object of fields. 
+            Each field has its type and options.
+        </p>
+        <p class="content">Import</p>
+        <p class="content code">import {{ '{' }} Schema {{ '}' }} from "@mayajs/sql";</p>
+        <p class="content">Implementation</p>
+        <p class="content code">import {{ '{' }} DataTypes {{ '}' }} from "sequelize";<br/>
+            <span>import {{ '{' }}  SqlModel {{ '}' }}  from "@mayajs/sql"; <br /></span>
+            <span><br/>const schema = {{ '{' }}<br /></span>
+            <span class="tab"> name: {{ '{' }}</span>
+            <span class="tab-1">type: DataTypes.STRING,</span>
+            <span class="tab-1">allowNull: false,</span>
+            <span class="tab">{{ '}' }},</span>
+            <span>{{ '}' }};<br/></span>
+            <span><br />export default SqlModel("User", schema, {{ '{}' }});</span>
+        </p>
+        
+    </div>
+    
+    <hr />
+    <div class="row justify-content-between pr-2 mb-5">
+      <div class="col-md-2 text-left previous">
+        <p class="m-0"><b>< PREVIOUS</b></p>
+        <h4 class="text-left"><a routerLink="/get-started/methods">Methods</a></h4>
+      </div>
+      <div class="col-md-2 text-right next">
+        <p class="m-0"><b>NEXT ></b></p>
+        <h4 class="text-right"><a routerLink="/get-started/routing">Routing</a></h4>
+      </div>
+    </div>
+  </section>
+  
