@@ -1,1 +1,20 @@
-<p>sidenav works!</p>
+<div class="sidenav">
+    <div class="text-center">
+      <h3><a href="" class="text-center mayajs">MayaJS</a></h3>
+    </div>
+    <ul class="nav flex-column">
+      <li class="nav-item" *ngFor="let navItem of navItems">
+        <a class="nav-link main-menu">
+          <span (click)="gotoPage(navItem.url)"> {{ navItem.title }}</span>
+        </a>
+        <ul *ngIf="navItem.sub" class="sub-link">
+          <li *ngFor="let sub of navItem.sub">
+            <a class="nav-link sub-menu">
+              <span (click)="gotoFragment(navItem.url, sub.url)">{{ sub.title }}</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  
