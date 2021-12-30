@@ -60,7 +60,7 @@ export class GettingStartedComponent implements OnInit {
         { title: "Postgres", url: "postgres" },
       ],
     },
-    { title: "Routing", url: "routing" },
+    { title: "Router", url: "routing" },
     { title: "Middlewares", url: "middlewares" },
     { title: "Validation", url: "validation" },
     { itle: "FAQs", url: "faqs" },

@@ -1,0 +1,110 @@
+<section class="introduction mt-5">
+    <div class="topic">
+        <h4 class="mb-3" id="methods">Methods</h4>
+        <p class="content">Installation</p>
+        <p class="content code">npm i @mayajs/common</p>
+    </div>
+    <div class="topic">
+        <h4 class="mb-3" id="get">Get</h4>
+        <p class="content">
+          This is a decorator function is for creating a GET METHOD ROUTE. 
+          GET request is used to retreive data from a server at the specified resource.
+        </p>
+        <p class="content">Import</p>
+        <p class="content code">import {{ '{' }} Get {{ '}' }} from "@mayajs/common";</p>
+        <p class="content">Usage</p>
+        <p class="content code">
+          <span>
+            <p>@Get({{ '{' }} path: "/", middlewares: [] {{ '}' }})</p>
+            <p>function(){{ '{' }}</p> 
+            <p class="tab">// Do some GET stuff here</p>
+            }
+          </span>
+        </p>
+    </div>
+    <div class="topic">
+        <h4 class="mb-3" id="post">Post</h4>
+        <p class="content">
+          This is a decorator function is for creating a POST METHOD ROUTE. 
+          POST requests are used to send data to the API sever to create or udpate a resource. 
+          The data sent to the server is stored in the request body of the HTTP request.
+        </p>
+        <p class="content">Import</p>
+        <p class="content code">import {{ '{' }} Post {{ '}' }} from "@mayajs/common";</p>
+        <p class="content">Usage</p>
+        <p class="content code">
+          <span>
+            <p>@Post({{ '{' }} path: "/", middlewares: [] {{ '}' }})</p>
+            <p>function(){{ '{' }}</p> 
+            <p class="tab">// Do some POST stuff here</p>
+            }
+          </span>
+        </p>
+    </div>
+    <div class="topic">
+        <h4 class="mb-3" id="put">Put</h4>
+        <p class="content">
+          This is a decorator function is for creating a Put METHOD ROUTE. 
+          Is similar to POST but it's usage is to update a specific resource.
+        </p>
+        <p class="content">Import</p>
+        <p class="content code">import {{ '{' }} Put {{ '}' }} from "@mayajs/common";</p>
+        <p class="content">Usage</p>
+        <p class="content code">
+          <span>
+            <p>@Put({{ '{' }} path: "/", middlewares: [] {{ '}' }})</p>
+            <p>function(){{ '{' }}</p> 
+            <p class="tab">// Do some PUT stuff here</p>
+            }
+          </span>
+        </p>
+    </div>
+    <div class="topic">
+        <h4 class="mb-3" id="patch">Patch</h4>
+        <p class="content">
+          This is a decorator function is for creating a PATCH METHOD ROUTE. 
+          Is similar to POST and PUT but used only apply partial modifications to the resource.
+        </p>
+        <p class="content">Import</p>
+        <p class="content code">import {{ '{' }} Patch {{ '}' }} from "@mayajs/common";</p>
+        <p class="content">Usage</p>
+        <p class="content code">
+          <span>
+            <p>@Patch({{ '{' }} path: "/", middlewares: [] {{ '}' }})</p>
+            <p>function(){{ '{' }}</p> 
+            <p class="tab">// Do some PATCH stuff here</p>
+            }
+          </span>
+        </p>
+    </div>
+    <div class="topic">
+        <h4 class="mb-3" id="delete">Delete</h4>
+        <p class="content">
+          This is a decorator function is for creating a DELETE METHOD ROUTE. 
+          DELETE request is used to delete the resource at the specified URL.
+        </p>
+        <p class="content">Import</p>
+        <p class="content code">import {{ '{' }} Delete {{ '}' }} from "@mayajs/common";</p>
+        <p class="content">Usage</p>
+        <p class="content code">
+          <span>
+            <p>@Delete({{ '{' }} path: "/", middlewares: [] {{ '}' }})</p>
+            <p>function(){{ '{' }}</p> 
+            <p class="tab">// Do some DELETE stuff here</p>
+            }
+          </span>
+        </p>
+    </div>
+    <hr />
+    <div class="row justify-content-between pr-2 mb-5">
+      <div class="col-md-2 text-left previous">
+        <p class="m-0"><b>< PREVIOUS</b></p>
+        <h4 class="text-left"><a routerLink="/get-started/components">Components</a></h4>
+      </div>
+      <div class="col-md-2 text-right next">
+        <p class="m-0"><b>NEXT ></b></p>
+        <h4 class="text-right"><a routerLink="/get-started/databases">Databases</a></h4>
+      </div>
+    </div>
+  </section>
+  

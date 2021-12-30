@@ -1,0 +1,194 @@
+<section class="introduction mt-5">
+    <div class="topic">
+      <h4 class="mb-3" id="validation">Validation</h4>
+    </div>
+    <h4 class="mb-3">Check</h4>
+    <p class="content">This is a function used for validating fields for 
+        BODY and PARAMS of a request.
+    </p>
+    <p class="content">Import</p>
+    <p class="content code">import {{ '{' }} Check {{ '}' }} from "@mayajs/common";</p>
+    <p class="content">Usage</p>
+    <p class="content code">
+        @Post({{ '{' }} path: "/", middlewares: [
+        <span class="tab">Check("age") // Name of the fields to be checked. 
+            `defaults` to check the `body` of the request.</span>
+        <span class="tab">.isNumber() // Checks if the field is a number</span>
+        <span class="tab">.minLength(5) // Checks if the field has a minimum length of 5</span>
+        <span class="tab">.maxLength(10) // Checks if the field has a maximum length of 10</span>
+        <span class="tab">.notEmpty() // Checks if the field is not empty</span>
+        <span class="tab">.required(), // Checks if the field is present or not undefined</span>
+        <span>] {{ '}' }}) <br /> function(){{ '{}' }}</span>
+    </p>
+    <h4 class="mb-3">isNumber</h4>
+    <p class="content">This is a validation function that is used along with Check. 
+        This function checks if the field is a number and send a validation error response if its not.
+    </p>
+    <p class="content">Import</p>
+    <p class="content code">import {{ '{' }} Check {{ '}' }} from "@mayajs/common";</p>
+    <p class="content">Usage</p>
+    <p class="content code">
+        @Post({{ '{' }} path: "/", middlewares: [
+        <span class="tab">Check("age").isNumber(),</span>
+    <span>] {{ '}' }}) <br /> function(){{ '{}' }}</span>
+    </p>
+    <h4 class="mb-3">isBoolean</h4>
+    <p class="content">This is a validation function that is used along with Check. 
+        This function checks if the field is a boolean and send a validation error response if its not.
+    </p>
+    <p class="content">Import</p>
+    <p class="content code">import {{ '{' }} Check {{ '}' }} from "@mayajs/common";</p>
+    <p class="content">Usage</p>
+    <p class="content code">
+        @Post({{ '{' }} path: "/", middlewares: [
+        <span class="tab">Check("islogin").isBoolean(),</span>
+    <span>] {{ '}' }}) <br /> function(){{ '{}' }}</span>
+    </p>
+    <h4 class="mb-3">isString</h4>
+    <p class="content">This is a validation function that is used along with Check. 
+        This function checks if the field is a string and send a validation error response if its not.
+    </p>
+    <p class="content">Import</p>
+    <p class="content code">import {{ '{' }} Check {{ '}' }} from "@mayajs/common";</p>
+    <p class="content">Usage</p>
+    <p class="content code">
+        @Post({{ '{' }} path: "/", middlewares: [
+        <span class="tab">Check("password").isString(),</span>
+    <span>] {{ '}' }}) <br /> function(){{ '{}' }}</span>
+    </p>
+    <h4 class="mb-3">isAddress</h4>
+    <p class="content">This is a validation function that is used along with Check. 
+        This function checks if the field is a valid address and send a validation error response if its not.
+    </p>
+    <p class="content">Import</p>
+    <p class="content code">import {{ '{' }} Check {{ '}' }} from "@mayajs/common";</p>
+    <p class="content">Usage</p>
+    <p class="content code">
+        @Post({{ '{' }} path: "/", middlewares: [
+        <span class="tab">Check("address").address(),</span>
+    <span>] {{ '}' }}) <br /> function(){{ '{}' }}</span>
+    </p>
+    <h4 class="mb-3">isRegExp</h4>
+    <p class="content">This is a validation function that is used along with Check. 
+        This function accepts a RegExp and checks if the field will match the regex. If the test fails it will send a validation error response if its not.
+    </p>
+    <p class="content">Import</p>
+    <p class="content code">import {{ '{' }} Check {{ '}' }} from "@mayajs/common";</p>
+    <p class="content">Usage</p>
+    <p class="content code">
+        @Post({{ '{' }} path: "/", middlewares: [
+        <span class="tab">Check("password").isRegExp(/^[A-Za-z0-9.,\s]*$/),</span>
+    <span>] {{ '}' }}) <br /> function(){{ '{}' }}</span>
+    </p>
+    <h4 class="mb-3">minLength</h4>
+    <p class="content">This is a validation function that is used along with Check. 
+        This function accepts an argument which is a number and checks if the field length is greater than or equal to the parameter. 
+        If the field length is not greater than or equal to the parameter it will send a validation error response if its not.
+    </p>
+    <p class="content">Import</p>
+    <p class="content code">import {{ '{' }} Check {{ '}' }} from "@mayajs/common";</p>
+    <p class="content">Usage</p>
+    <p class="content code">
+        @Post({{ '{' }} path: "/", middlewares: [
+        <span class="tab">Check("password").minLength(5),</span>
+    <span>] {{ '}' }}) <br /> function(){{ '{}' }}</span>
+    </p>
+    <h4 class="mb-3">maxLength</h4>
+    <p class="content">This is a validation function that is used along with Check. 
+        This function accepts an argument which is a number and checks if the field length is less than or equal to the parameter. 
+        If the field length is not less than or equal to the parameter it will send a validation error response if its not.
+    </p>
+    <p class="content">Import</p>
+    <p class="content code">import {{ '{' }} Check {{ '}' }} from "@mayajs/common";</p>
+    <p class="content">Usage</p>
+    <p class="content code">
+        @Post({{ '{' }} path: "/", middlewares: [
+        <span class="tab">Check("password").minLength(10),</span>
+    <span>] {{ '}' }}) <br /> function(){{ '{}' }}</span>
+    </p>
+    <h4 class="mb-3">isDate</h4>
+    <p class="content">This is a validation function that is used along with Check. 
+        This function checks if the field is a valid date and send a validation error response if its not.
+    </p>
+    <p class="content">Import</p>
+    <p class="content code">import {{ '{' }} Check {{ '}' }} from "@mayajs/common";</p>
+    <p class="content">Usage</p>
+    <p class="content code">
+        @Post({{ '{' }} path: "/", middlewares: [
+        <span class="tab">Check("date").isDate(),</span>
+    <span>] {{ '}' }}) <br /> function(){{ '{}' }}</span>
+    </p>
+    <h4 class="mb-3">isEmail</h4>
+    <p class="content">This is a validation function that is used along with Check. 
+        This function checks if the field is a valid email and send a validation error response if its not.
+    </p>
+    <p class="content">Import</p>
+    <p class="content code">import {{ '{' }} Check {{ '}' }} from "@mayajs/common";</p>
+    <p class="content">Usage</p>
+    <p class="content code">
+        @Post({{ '{' }} path: "/", middlewares: [
+        <span class="tab">Check("email").isEmail(),</span>
+    <span>] {{ '}' }}) <br /> function(){{ '{}' }}</span>
+    </p>
+    <h4 class="mb-3">isPassword</h4>
+    <p class="content">This is a validation function that is used along with Check. 
+        This function checks if the field is a valid password and send a validation error response if its not.
+    </p>
+    <p class="content">Import</p>
+    <p class="content code">import {{ '{' }} Check {{ '}' }} from "@mayajs/common";</p>
+    <p class="content">Usage</p>
+    <p class="content code">
+        @Post({{ '{' }} path: "/", middlewares: [
+        <span class="tab">Check("password").isPassword(),</span>
+    <span>] {{ '}' }}) <br /> function(){{ '{}' }}</span>
+    </p>
+    <h4 class="mb-3">notEmpty</h4>
+    <p class="content">This is a validation function that is used along with Check. 
+        This function checks if the field is not empty and send a validation error response if its not.
+    </p>
+    <p class="content">Import</p>
+    <p class="content code">import {{ '{' }} Check {{ '}' }} from "@mayajs/common";</p>
+    <p class="content">Usage</p>
+    <p class="content code">
+        @Post({{ '{' }} path: "/", middlewares: [
+        <span class="tab">Check("password").notEmpty(),</span>
+    <span>] {{ '}' }}) <br /> function(){{ '{}' }}</span>
+    </p>
+    <h4 class="mb-3">required</h4>
+    <p class="content">This is a validation function that is used along with Check. 
+        This function checks if the field is not undefined and send a validation error response if its not.
+    </p>
+    <p class="content">Import</p>
+    <p class="content code">import {{ '{' }} Check {{ '}' }} from "@mayajs/common";</p>
+    <p class="content">Usage</p>
+    <p class="content code">
+        @Post({{ '{' }} path: "/", middlewares: [
+        <span class="tab">Check("user").required(),</span>
+    <span>] {{ '}' }}) <br /> function(){{ '{}' }}</span>
+    </p>
+    <h4 class="mb-3">isArray</h4>
+    <p class="content">This is a validation function that is used along with Check. 
+        This function checks if the field is an array and send a validation error response if its not.
+    </p>
+    <p class="content">Import</p>
+    <p class="content code">import {{ '{' }} Check {{ '}' }} from "@mayajs/common";</p>
+    <p class="content">Usage</p>
+    <p class="content code">
+        @Post({{ '{' }} path: "/", middlewares: [
+        <span class="tab">Check("user").isArray(),</span>
+    <span>] {{ '}' }}) <br /> function(){{ '{}' }}</span>
+    </p>
+    <h4 class="mb-3">includes</h4>
+    <p class="content">This is a validation function that is used along with Check. 
+        This function accepts an array of values and checks if the field or fields items values 
+        is included on the array and send a validation error response if its not.
+    </p>
+    <p class="content">Import</p>
+    <p class="content code">import {{ '{' }} Check {{ '}' }} from "@mayajs/common";</p>
+    <p class="content">Usage</p>
+    <p class="content code">
+        @Post({{ '{' }} path: "/", middlewares: [
+        <span class="tab">Check("user").includes<{{ 'string' }}>(["cats", "dogs"]),</span>
+    <span>] {{ '}' }}) <br /> function(){{ '{}' }}</span>
+    </p>
+</section>
